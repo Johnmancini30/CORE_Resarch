@@ -19,8 +19,25 @@ class Analysis:
     :return: None
     """
     def display_data(self):
-        x = [i for i in range(1, len(self.data) + 1)]
-        plt.plot(x, self.data)
+        cache = {}
+
+        curr_key = 1
+        cache[curr_key] = 1
+        curr = int(self.data[0])
+
+        for time in self.data:
+            if curr == int(time):
+                if curr_key in cache:
+                    cache[curr_key] += 1
+            else:
+                curr = int(time)
+                curr_key += 1
+                cache[curr_key] = 1
+
+        x = list(cache.keys())
+        y = list(cache.values())
+
+        plt.plot(x, y)
         plt.show()
 
 
@@ -35,10 +52,17 @@ class Analysis:
 
         with open(self.fn, "r") as f:
             lines = f.read().split("\n")
-            for line in lines:
-                print(line)
-                #TODO convert the timestamp to an float that makes sense, probably just convert it to seconds
-                to_ret.append(int(line.split("-")[1]))
+            for line in lines[:-1]:
+
+                #Converting timestamp to seconds
+                to_add = 0.0
+                tmp = line.split("-")[1].split(".")
+                fact = 60*60
+                for num in tmp[0].split(":"):
+                    to_add += int(num)*fact
+                    fact/=60
+                to_add += float("." + tmp[-1])
+                to_ret.append(to_add)
 
         return to_ret
 
