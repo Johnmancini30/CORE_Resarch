@@ -1,5 +1,5 @@
 from parsing_instruction import Parsing_Instruction
-
+import sys
 
 """
 parser.py: parses the log file that is created when MGEN generates traffic
@@ -95,7 +95,9 @@ def parse_file(file_name, instruction):
 
 
 if __name__=='__main__':
-    ins = Parsing_Instruction(recv=True)
+    print(len(sys.argv))
+    if len(sys.argv) == 3:
+        ins = Parsing_Instruction(recv=True)
 
-    data = parse_file("new1.log", ins)
-    write_to_file(data, "output.txt")
+        data = parse_file(sys.argv[1], ins)
+        write_to_file(data, sys.argv[2])
