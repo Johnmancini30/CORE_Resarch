@@ -22,7 +22,7 @@ class Analysis:
         cache = {}
 
         curr_key = 1
-        cache[curr_key] = 1
+        cache[curr_key] = 0
         curr = int(self.data[0])
 
         for time in self.data:
@@ -36,8 +36,9 @@ class Analysis:
 
         x = list(cache.keys())
         y = list(cache.values())
+        print(len(x))
 
-        plt.plot(x, y)
+        plt.scatter(x, y)
         plt.show()
 
 
@@ -67,5 +68,5 @@ class Analysis:
         return to_ret
 
 if __name__=='__main__':
-    a = Analysis("output.txt")
+    a = Analysis("output1.txt")
     a.display_data()
