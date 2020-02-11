@@ -81,7 +81,7 @@ Parses the entire log file
 
 :param string file_name: name of the log file
 :param Parsing_Instruction instruction: allows preference to what should be written
-:return: None
+:return: list of dictionaries
 """
 def parse_file(file_name, instruction):
     all_data = []
