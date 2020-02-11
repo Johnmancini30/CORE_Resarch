@@ -95,7 +95,7 @@ def parse_file(file_name, instruction):
 
 
 if __name__=='__main__':
-    ins = Parsing_Instruction()
-    ins.recv = True
+    ins = Parsing_Instruction(recv=True)
+
     data = parse_file("new1.log", ins)
     write_to_file(data, "output.txt")
