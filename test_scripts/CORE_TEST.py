@@ -58,7 +58,7 @@ def test_network():
         
     coreemu.shutdown()
 
-if __name__=='__main__':
+if __name__ in ['__main__', "__builtin__"]:
     log_format = "%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s"
     logging.basicConfig(filename='example.log', level=logging.DEBUG, format=log_format)
     test_network()

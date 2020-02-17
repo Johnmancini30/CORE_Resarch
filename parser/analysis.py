@@ -12,6 +12,38 @@ class Analysis:
         self.fn = file_name
         self.data = self.extract_data()
 
+
+    """
+    To analyze the mean of the data. In the context of received data it makes sense to calculate the average bytes 
+    that arrived per second
+
+    :param None:
+    :return: None
+    """
+    def calculate_average(self):
+        cache = {}
+
+        curr_key = 1
+        cache[curr_key] = 0
+        curr = int(self.data[0])
+
+        for time in self.data:
+            if curr == int(time):
+                cache[curr_key] += 1
+            else:
+                curr = int(time)
+                curr_key += 1
+                cache[curr_key] = 1
+
+        num_seconds = len(cache.keys())-2
+        tot = 0
+        for key in list(cache.keys())[1:-1]:
+            tot += cache[key]*125
+        print(tot/num_seconds)
+
+        print(cache)
+
+
     """
     For looking at data with matplotlib
     
@@ -45,7 +77,7 @@ class Analysis:
     """
     Parses file for data
     
-    :param None
+    :param None:
     :return: list
     """
     def extract_data(self):
@@ -67,6 +99,8 @@ class Analysis:
 
         return to_ret
 
+
 if __name__=='__main__':
     a = Analysis("output1.txt")
-    a.display_data()
+    a.calculate_average()
+    #a.display_data()
