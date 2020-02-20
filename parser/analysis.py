@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import re
 
 """
 analysis.py: runs analysis on the data that was parsed
@@ -38,7 +39,7 @@ class Analysis:
         num_seconds = len(cache.keys())-2
         tot = 0
         for key in list(cache.keys())[1:-1]:
-            tot += cache[key]*125
+            tot += cache[key]*125*8
         print(tot/num_seconds)
 
         print(cache)
@@ -50,7 +51,8 @@ class Analysis:
     :param None
     :return: None
     """
-    def display_data(self):
+    def display_data(self, x, y):
+        """
         cache = {}
 
         curr_key = 1
@@ -69,6 +71,7 @@ class Analysis:
         x = list(cache.keys())
         y = list(cache.values())
         print(len(x))
+        """
 
         plt.scatter(x, y)
         plt.show()
@@ -81,26 +84,50 @@ class Analysis:
     :return: list
     """
     def extract_data(self):
-        to_ret = []
+        to_ret = {}
 
         with open(self.fn, "r") as f:
-            lines = f.read().split("\n")
-            for line in lines[:-1]:
 
-                #Converting timestamp to seconds
-                to_add = 0.0
-                tmp = line.split("-")[1].split(".")
-                fact = 60*60
-                for num in tmp[0].split(":"):
-                    to_add += int(num)*fact
-                    fact/=60
-                to_add += float("." + tmp[-1])
-                to_ret.append(to_add)
+            lines = f.read().split("\n")
+            curr = lines[0]
+            i = 1
+            while (i < len(lines)):
+                if all([c == " " for c in lines[i]]):
+                    i+=1
+                    continue
+                elif bool(re.search(r'\d', lines[i])):
+                    if curr not in to_ret:
+                        to_ret[curr] = []
+
+                    to_ret[curr].append(self.convert_timestamp(lines[i]))
+                else:
+                    curr = lines[i]
+
+                i += 1
 
         return to_ret
 
+    """
+    Converts a timestamp to seconds
+    
+    :param float: time
+    :return float:
+    """
+    @staticmethod
+    def convert_timestamp(time):
+        to_add = 0.0
+        fact = 60*60
+        tmp = time.split(":")
+
+        for num in tmp[:-1]:
+            to_add += int(num)*fact
+            fact/=60
+
+        tmp = tmp[-1].split(".")
+        to_add += float(tmp[0]) + float("." + tmp[-1])
+
+        return to_add
+
 
 if __name__=='__main__':
-    a = Analysis("output1.txt")
-    a.calculate_average()
-    #a.display_data()
+    a = Analysis("output.txt")

@@ -6,18 +6,21 @@ parser.py: parses the log file that is created when MGEN generates traffic
 """
 
 """
-Creates a file with the timestamps to be used later
+Creates a file with the timestamps to be used later. The file format is for each parameter, it prints that parameter name and then
+all of the data corresponding to it below, then goes on to the next parameter
 
 :param array[dict] data: an array of dictionaries, each one holding the timestamp data
 :param string write_name: name of file to write to
 :return: None
 """
 def write_to_file(data, write_name):
+
     with open(write_name, "w") as f:
-        for entry in data:
-            for key in entry:
-                f.write(key + "-" + entry[key] + "\n")
-    
+        for key in data[0].keys():
+            f.write(key + "\n")
+            for i in range(len(data)):
+                f.write(data[i][key] + "\n")
+
         
 
 """
@@ -32,8 +35,7 @@ def print_data_entry(data):
 
 
 """
-Parses a specific timestamp and stores it in a dictionary, deletes any data
-the user does not want
+Parses a specific timestamp and stores it in a dictionary
 
 :param string timestmap: a specific entry from log file
 :return: dict
@@ -96,7 +98,7 @@ def parse_file(file_name, instruction):
 
 if __name__=='__main__':
     if len(sys.argv) == 3:
-        ins = Parsing_Instruction(recv=True)
+        ins = Parsing_Instruction(recv=True, sent=True)
 
         data = parse_file(sys.argv[1], ins)
         write_to_file(data, sys.argv[2])

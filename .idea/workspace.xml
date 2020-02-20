@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/parser/parser.py" line="101" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/parser/parser.py" line="103" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_scripts/CORE_TEST.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_scripts/CORE_TEST.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/output1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/output1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +22,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+            <state relative-caret-position="284">
+              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,12 +70,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="CORE_Resarch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CORE_Resarch" type="462c0819:PsiDirectoryNode" />
+              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="CORE_Resarch" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CORE_Resarch" type="462c0819:PsiDirectoryNode" />
+              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
               <item name="parser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -81,7 +87,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/parser" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -135,7 +141,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/parser.py" />
-      <option name="PARAMETERS" value="test1.log output1.txt" />
+      <option name="PARAMETERS" value="test.log output.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -250,6 +256,19 @@
     <option name="LAST_COMMIT_MESSAGE" value="current" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/parser/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/output1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/test1.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3120">
+          <caret line="208" column="51" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser/parsing_instruction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -257,16 +276,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/output1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="90">
+          <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -275,15 +288,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/test1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="208" column="51" selection-start-line="208" selection-start-column="50" selection-end-line="208" selection-end-column="51" />
+        <state relative-caret-position="284">
+          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
