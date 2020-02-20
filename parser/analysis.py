@@ -53,11 +53,32 @@ class Analysis:
     """
     For looking at data with matplotlib
     
-    :param None
+    :param dict: data Conains parameters
     :return: None
     """
-    def display_data(self, x, y):
+    def display_data(self, data):
+        x = None
+        y = None
+        x_label = None
+        y_label = None
+
+        try:
+            x = data["x"]
+            y = data["y"]
+        except:
+            print("Missing x or y data")
+
+        if "x_label" in data:
+            x_label = data["x_label"]
+        if "y_label" in data:
+            y_label = data["y_label"]
+
         plt.scatter(x, y)
+        if x_label:
+            plt.xlabel(x_label)
+        if y_label:
+            plt.ylabel(y_label)
+
         plt.show()
 
 
@@ -116,6 +137,8 @@ class Analysis:
 
 if __name__=='__main__':
     a = Analysis("30Second_10kbps_Poisson.txt")
-    a.calculate_average("sent")
-    a.calculate_average("recv")
-    a.display_data(a.data["sent"], a.data["recv"])
+
+    #a.calculate_average("sent")
+    #a.calculate_average("recv")
+    #data = {"x" : a.data["sent"], "y" : a.data["recv"], "x_label" : "Sent", "y_label" : "Recevied"}
+    #a.display_data(data)
