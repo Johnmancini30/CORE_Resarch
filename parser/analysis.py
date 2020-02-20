@@ -22,6 +22,7 @@ class Analysis:
     :return: None
     """
     def calculate_average(self, data_type):
+
         cache = {}
 
         curr_key = 1
@@ -48,6 +49,7 @@ class Analysis:
         print("")
         print("Actual packets generated per second, 125 bytes per packet:")
         print(cache)
+        print("====================================================================================================================================================")
 
 
     """
@@ -56,6 +58,7 @@ class Analysis:
     :param dict: data Conains parameters
     :return: None
     """
+    @staticmethod
     def display_data(self, data):
         x = None
         y = None
@@ -135,6 +138,7 @@ class Analysis:
         return to_add
 
 
+
 if __name__=='__main__':
     a = Analysis("30Second_10kbps_Poisson.txt")
 
@@ -142,3 +146,6 @@ if __name__=='__main__':
     #a.calculate_average("recv")
     #data = {"x" : a.data["sent"], "y" : a.data["recv"], "x_label" : "Sent", "y_label" : "Recevied"}
     #a.display_data(data)
+
+    avg_latency = sum([x[1]-x[0] for x in zip(a.data["sent"], a.data["recv"])])/len(a.data["recv"])
+    print(avg_latency)
