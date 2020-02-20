@@ -18,17 +18,18 @@ class Analysis:
     To analyze the mean of the data. In the context of received data it makes sense to calculate the average bytes 
     that arrived per second
 
-    :param None:
+    :param string: data_type this is to specify which string to use in data dictionary
     :return: None
     """
-    def calculate_average(self):
+    def calculate_average(self, data_type):
         cache = {}
 
         curr_key = 1
         cache[curr_key] = 0
-        curr = int(self.data[0])
+        data = self.data[data_type]
+        curr = int(data[0])
 
-        for time in self.data:
+        for time in data:
             if curr == int(time):
                 cache[curr_key] += 1
             else:
@@ -40,8 +41,12 @@ class Analysis:
         tot = 0
         for key in list(cache.keys())[1:-1]:
             tot += cache[key]*125*8
-        print(tot/num_seconds)
 
+        print("Calculating average on the <" + data_type + "> parameter.\n")
+        print("Average bits generated per second:")
+        print(tot/num_seconds)
+        print("")
+        print("Actual packets generated per second, 125 bytes per packet:")
         print(cache)
 
 
@@ -52,36 +57,15 @@ class Analysis:
     :return: None
     """
     def display_data(self, x, y):
-        """
-        cache = {}
-
-        curr_key = 1
-        cache[curr_key] = 0
-        curr = int(self.data[0])
-
-        for time in self.data:
-            if curr == int(time):
-                if curr_key in cache:
-                    cache[curr_key] += 1
-            else:
-                curr = int(time)
-                curr_key += 1
-                cache[curr_key] = 1
-
-        x = list(cache.keys())
-        y = list(cache.values())
-        print(len(x))
-        """
-
         plt.scatter(x, y)
         plt.show()
 
 
     """
-    Parses file for data
+    Parses file for data, stores each parameter as key with corresponding list of values
     
     :param None:
-    :return: list
+    :return: dict of lists
     """
     def extract_data(self):
         to_ret = {}
@@ -107,6 +91,7 @@ class Analysis:
 
         return to_ret
 
+
     """
     Converts a timestamp to seconds
     
@@ -130,4 +115,7 @@ class Analysis:
 
 
 if __name__=='__main__':
-    a = Analysis("output.txt")
+    a = Analysis("30Second_10kbps_Poisson.txt")
+    a.calculate_average("sent")
+    a.calculate_average("recv")
+    a.display_data(a.data["sent"], a.data["recv"])

@@ -7,9 +7,9 @@
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/output1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/output1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/output1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/test.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/test1.log" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+            <state relative-caret-position="164">
+              <caret line="64" column="88" selection-start-line="64" selection-start-column="88" selection-end-line="64" selection-end-column="88" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -141,7 +141,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/parser.py" />
-      <option name="PARAMETERS" value="test.log output.txt" />
+      <option name="PARAMETERS" value="30Second_10kbps_Poisson.log 30Second_10kbps_Poisson.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -220,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581444689265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="modified analysis extract data method">
+      <created>1582213700924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582213700924</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -253,7 +260,8 @@
     <MESSAGE value="deleted log files" />
     <MESSAGE value="more log files." />
     <MESSAGE value="current" />
-    <option name="LAST_COMMIT_MESSAGE" value="current" />
+    <MESSAGE value="modified analysis extract data method" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified analysis extract data method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/parser/output.txt">
@@ -278,7 +286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="-946">
           <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
@@ -288,8 +296,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="23" />
+        <state relative-caret-position="164">
+          <caret line="64" column="88" selection-start-line="64" selection-start-column="88" selection-end-line="64" selection-end-column="88" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
