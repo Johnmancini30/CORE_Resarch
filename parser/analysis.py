@@ -58,8 +58,7 @@ class Analysis:
     :param dict: data Conains parameters
     :return: None
     """
-    @staticmethod
-    def display_data(self, data):
+    def display_data(self, data, plot_type):
         x = None
         y = None
         x_label = None
@@ -76,7 +75,11 @@ class Analysis:
         if "y_label" in data:
             y_label = data["y_label"]
 
-        plt.scatter(x, y)
+        if plot_type == "plot":
+            plt.plot(x, y)
+        elif plot_type == "scatter":
+            plt.scatter(x, y)
+
         if x_label:
             plt.xlabel(x_label)
         if y_label:
@@ -137,15 +140,62 @@ class Analysis:
 
         return to_add
 
+    """
+    Calculates the age of information with data from one run
+    
+    :param list: sent A list of times that the packets were sent at
+    :param list: recv A list of times when te packets were received
+    :return None:
+    """
+    def calculate_age(self, sent, recv):
+        n = 5
+        age  = []
+        time = []
+        sent_time = []
+
+        curr_time = 0
+        curr_age = recv[0] - sent[0]
+        for i in range(len(sent) - 1):
+            curr_age = recv[i] - sent[i]
+            age.append(curr_age)
+            time.append(curr_time)
+            sent_time.append(sent[i+1] - recv[0])
+            print(age[-1])
+            print(time[-1])
+            print(sent_time[-1])
+
+
+            to_add = (recv[i+1] - recv[i])/n
+            for j in range(n):
+                curr_time += to_add
+                curr_age += to_add
+                age.append(curr_age)
+                time.append(curr_time)
+
+
+
+        print(sent)
+        print(recv)
+
+        data = {"x": time, "y": age, "x_label": "Time", "y_label": "Age"}
+        plt.scatter(sent_time, [0 for i in range(len(sent_time))])
+        self.display_data(data, "plot")
+
+
 
 
 if __name__=='__main__':
-    a = Analysis("30Second_10kbps_Poisson.txt")
+    a = Analysis("200Second_10kbps_Poisson.txt")
 
     #a.calculate_average("sent")
     #a.calculate_average("recv")
     #data = {"x" : a.data["sent"], "y" : a.data["recv"], "x_label" : "Sent", "y_label" : "Recevied"}
     #a.display_data(data)
 
-    avg_latency = sum([x[1]-x[0] for x in zip(a.data["sent"], a.data["recv"])])/len(a.data["recv"])
-    print(avg_latency)
+
+    sent = [1, 2, 3, 4]
+    recv = [1.5, 2.4, 3.3, 4.6]
+    sent = a.data["sent"][:5]
+    recv = a.data["recv"][:5]
+
+    a.calculate_age(sent, recv)
