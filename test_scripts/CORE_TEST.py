@@ -40,8 +40,8 @@ def test_network():
         interface = prefixes.create_interface(node)
 
 
-        #session.add_link(node.id, switch.id, interface_one=interface, link_options=lo)
-        session.add_link(node.id, switch.id, interface_one=interface)
+        session.add_link(node.id, switch.id, interface_one=interface, link_options=lo)
+        #session.add_link(node.id, switch.id, interface_one=interface)
 
 
     session.instantiate()
@@ -59,6 +59,4 @@ def test_network():
     coreemu.shutdown()
 
 if __name__ in ['__main__', "__builtin__"]:
-    log_format = "%(asctime)s - %(levelname)s - %(module)s:%(funcName)s - %(message)s"
-    logging.basicConfig(filename='example.log', level=logging.DEBUG, format=log_format)
     test_network()
