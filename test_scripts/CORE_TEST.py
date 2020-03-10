@@ -5,7 +5,7 @@ from core.emulator.enumerations import NodeTypes
 import subprocess
 import logging
 
-DEBUG = False
+DEBUG = True
 
 def test_network():
     # ip generator for example
@@ -13,8 +13,13 @@ def test_network():
     prefixes = IpPrefixes(ip4_prefix="10.83.0.0/16")
 
     if DEBUG:
-        result = subprocess.run(['tc', 'qdisc', 'show'], stdout=subprocess.PIPE)
-        print(result.stdout)
+        result = str(subprocess.run(['tc', 'qdisc', 'show'], stdout=subprocess.PIPE).stdout)
+        print(result)
+        
+        for line in str(result).split("\n"):
+            pass
+            #print(line)
+        print("\n\n\n")
 
     # create emulator instance for creating sessions and utility methods
 
@@ -35,27 +40,21 @@ def test_network():
     lo.jitter = 1000
     # create nodes
     for _ in range(2):
+        #print("ADDING NODE")
         node = session.add_node()
 
         interface = prefixes.create_interface(node)
-
-
         session.add_link(node.id, switch.id, interface_one=interface, link_options=lo)
         #session.add_link(node.id, switch.id, interface_one=interface)
 
-
     session.instantiate()
-    session.shutdown()
-
-    
     if DEBUG:
         result = subprocess.run(['tc', 'qdisc', 'show'], stdout=subprocess.PIPE)
         print("\n\n\n")
         print(result.stdout)
+    session.shutdown()
 
 
-
-        
     coreemu.shutdown()
 
 if __name__ in ['__main__', "__builtin__"]:

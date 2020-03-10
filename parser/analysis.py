@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import re
 
+KEY_WORDS = ["recv", "sent", "seq"]
+TIME_KEY_WORDS = ["recv", "sent"]
 """
 analysis.py: runs analysis on the data that was parsed
 """
@@ -43,13 +45,7 @@ class Analysis:
         for key in list(cache.keys())[1:-1]:
             tot += cache[key]*125*8
 
-        print("Calculating average on the <" + data_type + "> parameter.\n")
-        print("Average bits generated per second:")
-        print(tot/num_seconds)
-        print("")
-        print("Actual packets generated per second, 125 bytes per packet:")
-        print(cache)
-        print("====================================================================================================================================================")
+
 
 
     """
@@ -71,19 +67,14 @@ class Analysis:
             print("Missing x or y data")
 
         if "x_label" in data:
-            x_label = data["x_label"]
+            plt.xlabel(data["x_label"])
         if "y_label" in data:
-            y_label = data["y_label"]
+            plt.ylabel(data["y_label"])
 
         if plot_type == "plot":
             plt.plot(x, y)
         elif plot_type == "scatter":
             plt.scatter(x, y)
-
-        if x_label:
-            plt.xlabel(x_label)
-        if y_label:
-            plt.ylabel(y_label)
 
         plt.show()
 
@@ -100,21 +91,21 @@ class Analysis:
         with open(self.fn, "r") as f:
 
             lines = f.read().split("\n")
-            curr = lines[0]
-            i = 1
+            curr = None
+            i = 0
             while (i < len(lines)):
-                if all([c == " " for c in lines[i]]):
-                    i+=1
+                if all(c == " " for c in lines[i]):
+                    i+= 1
                     continue
-                elif bool(re.search(r'\d', lines[i])):
-                    if curr not in to_ret:
-                        to_ret[curr] = []
-
+                if lines[i] in KEY_WORDS:
+                    curr = lines[i]
+                    to_ret[curr] = []
+                elif curr in TIME_KEY_WORDS:
                     to_ret[curr].append(self.convert_timestamp(lines[i]))
                 else:
-                    curr = lines[i]
+                    to_ret[curr].append(int(lines[i]))
 
-                i += 1
+                i+=1
 
         return to_ret
 
@@ -181,21 +172,68 @@ class Analysis:
         plt.scatter(sent_time, [0 for i in range(len(sent_time))])
         self.display_data(data, "plot")
 
+    """
+    Sorts the various data by sequence number because sequence number is not always incremental.
+    
+    :param list: seq The sequence numbers for a flow
+    :param list: data A list of lists that will sort by sequence
+    :return: list: A list of sorted lists by sequence
+    """
+    def sort_by_sequence(self):
+        to_sort = []
+
+        n = len(self.data["seq"])
+
+        for i in range(n):
+            to_add = [self.data["seq"][i], "seq"]
+            for key in self.data:
+                if key != "seq":
+                    to_add += [self.data[key][i], key]
+            to_sort.append(to_add)
+
+        to_sort = sorted(to_sort)
+
+        tmp = {}
+        for val in to_sort:
+            for i in range(0, len(val), 2):
+                if val[i+1] not in tmp:
+                    tmp[val[i+1]] = []
+
+                tmp[val[i+1]].append(val[i])
+
+        for key in tmp:
+            self.data[key] = tmp[key]
+
 
 
 
 if __name__=='__main__':
-    a = Analysis("200Second_10kbps_Poisson.txt")
+    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-no-queue.txt")
+    a.sort_by_sequence()
 
-    #a.calculate_average("sent")
-    #a.calculate_average("recv")
-    #data = {"x" : a.data["sent"], "y" : a.data["recv"], "x_label" : "Sent", "y_label" : "Recevied"}
-    #a.display_data(data)
+    seq = a.data["seq"]
+    #stopping once sequence increment is not 1
+    i = 0
+    while i < len(seq)-1 and seq[i+1]-seq[i] == 1:
+        i += 1
+    i = min(i+1, len(seq)-1)
+    seq = seq[:i]
+    sent = a.data["sent"][:i]
+    recv = a.data["recv"][:i]
 
 
-    sent = [1, 2, 3, 4]
-    recv = [1.5, 2.4, 3.3, 4.6]
-    sent = a.data["sent"][:5]
-    recv = a.data["recv"][:5]
+    sent_diff = [sent[i+1] - sent[i] for i in range(len(sent)-1)]
+    avg_diff = sum(sent_diff)/len(sent_diff)
+    print("Average time difference for sent packets", avg_diff)
+    data = {"x":seq, "y":sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
+    #a.display_data(data, "scatter")
 
-    a.calculate_age(sent, recv)
+
+    process_time = [recv[i] - sent[i] for i in range(len(sent))]
+    print(min(process_time))
+    print(max(process_time))
+    avg_process = sum(process_time)/len(process_time)
+    data = {"x": seq, "y": process_time, "x_label": "Packet id", "y_label": "Process Time"}
+    print("Average process time for packet", avg_process)
+    a.display_data(data, "scatter")
+

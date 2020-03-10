@@ -42,6 +42,7 @@ Parses a specific timestamp and stores it in a dictionary
 """
 def parse_timestamp(timestamp, instruction):
     info = timestamp.split(" ")
+    #print(info)
     parsed_data = {}
     
     if instruction.recv:
@@ -89,8 +90,9 @@ def parse_file(file_name, instruction):
     all_data = []
     with open(file_name, "r") as f:
         lines = f.read().split("\n")
-        for ts in lines[3:]:
-            if len(ts):
+        for ts in lines:
+
+            if len(ts) and "RECV" in ts and "sent" in ts:
                 all_data.append(parse_timestamp(ts, instruction))
 
     return all_data
@@ -98,7 +100,7 @@ def parse_file(file_name, instruction):
 
 if __name__=='__main__':
     if len(sys.argv) == 3:
-        ins = Parsing_Instruction(recv=True, sent=True)
+        ins = Parsing_Instruction(recv=True, sent=True, seq=True)
 
         data = parse_file(sys.argv[1], ins)
         write_to_file(data, sys.argv[2])
