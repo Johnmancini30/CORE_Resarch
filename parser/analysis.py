@@ -175,9 +175,8 @@ class Analysis:
     """
     Sorts the various data by sequence number because sequence number is not always incremental.
     
-    :param list: seq The sequence numbers for a flow
-    :param list: data A list of lists that will sort by sequence
-    :return: list: A list of sorted lists by sequence
+    :param None:
+    :return: None
     """
     def sort_by_sequence(self):
         to_sort = []
@@ -204,29 +203,42 @@ class Analysis:
         for key in tmp:
             self.data[key] = tmp[key]
 
+    """
+    This method will remove the ending data where the certain sequences on not incremented by 1, because the traffic flow ended before the were received
+    
+    :param None:
+    :return: None   
+    """
+    def remove_lost_sequences(self):
+        i = 0
+
+        while i < len(self.data["seq"]) - 1 and self.data["seq"][i + 1] - self.data["seq"][i] == 1:
+            i += 1
+        i = min(i + 1, len(self.data["seq"]))
+
+        self.data["seq"] = self.data["seq"][:i]
+        self.data["sent"] = self.data["sent"][:i]
+        self.data["recv"] = self.data["recv"][:i]
 
 
 
 if __name__=='__main__':
-    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-no-queue.txt")
+    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-infinite-queue.txt")
+
     a.sort_by_sequence()
+    a.remove_lost_sequences()
 
     seq = a.data["seq"]
-    #stopping once sequence increment is not 1
-    i = 0
-    while i < len(seq)-1 and seq[i+1]-seq[i] == 1:
-        i += 1
-    i = min(i+1, len(seq)-1)
-    seq = seq[:i]
-    sent = a.data["sent"][:i]
-    recv = a.data["recv"][:i]
+    sent = a.data["sent"]
+    recv = a.data["recv"]
 
 
     sent_diff = [sent[i+1] - sent[i] for i in range(len(sent)-1)]
+    x = [i+1 for i in range(len(sent_diff))]
     avg_diff = sum(sent_diff)/len(sent_diff)
     print("Average time difference for sent packets", avg_diff)
-    data = {"x":seq, "y":sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
-    #a.display_data(data, "scatter")
+    data = {"x":x, "y":sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
+    a.display_data(data, "scatter")
 
 
     process_time = [recv[i] - sent[i] for i in range(len(sent))]
