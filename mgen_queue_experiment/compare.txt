@@ -1,0 +1,14 @@
+NO QUEUE RUN:
+
+Average time difference for sent packets 0.02000004004003495
+5.299999611452222e-05
+0.00043599998753052205
+Average process time for packet 0.0001218619998981012
+
+
+INFINITE QUEUE RUN:
+
+Average time difference for sent packets 0.020000059059053124
+5.199998850002885e-05
+0.00030500000866595656
+Average process time for packet 0.000135789000094519

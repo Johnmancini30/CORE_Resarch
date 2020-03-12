@@ -225,9 +225,6 @@ class Analysis:
 if __name__=='__main__':
     a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-infinite-queue.txt")
 
-    a.sort_by_sequence()
-    a.remove_lost_sequences()
-
     seq = a.data["seq"]
     sent = a.data["sent"]
     recv = a.data["recv"]

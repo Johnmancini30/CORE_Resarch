@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mgen_queue_experiment/compare" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-0-queue.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-0-queue.log" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-0-queue.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/compare" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-0-queue.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-0-queue.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/analysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+            <state relative-caret-position="199">
+              <caret line="230" column="22" selection-start-line="230" selection-start-column="22" selection-end-line="230" selection-end-column="22" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -323,9 +325,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="most recent" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parser/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/output.txt" />
     <entry file="file://$PROJECT_DIR$/parser/output1.txt" />
     <entry file="file://$PROJECT_DIR$/parser/test1.log" />
     <entry file="file://$PROJECT_DIR$/parser/parsing_instruction.py">
@@ -345,16 +345,6 @@
     <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-0-queue.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -368,10 +358,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="214" column="51" selection-start-line="214" selection-start-column="51" selection-end-line="214" selection-end-column="51" />
+        <state relative-caret-position="139">
+          <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
