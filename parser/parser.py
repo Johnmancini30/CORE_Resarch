@@ -99,8 +99,6 @@ def parse_file(file_name, instruction):
 
 
 if __name__=='__main__':
-    if len(sys.argv) == 3:
-        ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-
-        data = parse_file(sys.argv[1], ins)
-        write_to_file(data, sys.argv[2])
+    ins = Parsing_Instruction(recv=True, sent=True, seq=True)
+    data = parse_file("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/log-output-twentyfive-queue.log", ins)
+    write_to_file(data, "/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-twentyfive-queue.txt")

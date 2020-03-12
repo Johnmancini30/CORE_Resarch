@@ -1,14 +1,26 @@
 NO QUEUE RUN:
+Average time difference for sent packets 0.001000004301721335
+MIN process time 2.5000001187436283e-05
+MAX process time 0.003819999998086132
+Average process time for packet 0.00011613233959917583
 
-Average time difference for sent packets 0.02000004004003495
-5.299999611452222e-05
-0.00043599998753052205
-Average process time for packet 0.0001218619998981012
+
+TEN QUEUE RUN:
+Average time difference for sent packets 0.001000004501801435
+MIN process time 2.6000008801929653e-05
+MAX process time 0.0011329999979352579
+Average process time for packet 0.00012529498839011565
 
 
-INFINITE QUEUE RUN:
+TWENTY QUEUE RUN:
+Average time difference for sent packets 0.0010032181982348432
+MIN process time 2.300000051036477e-05
+MAX process time 0.0557390000030864
+Average process time for packet 0.0002709573679616248
 
-Average time difference for sent packets 0.020000059059053124
-5.199998850002885e-05
-0.00030500000866595656
-Average process time for packet 0.000135789000094519
+TWENTYFIVE QUEUE RUN:
+Average time difference for sent packets 0.0010000045004504568
+MIN process time 2.5000001187436283e-05
+MAX process time 0.0167420000070706
+Average process time for packet 0.00010505219987244345
+

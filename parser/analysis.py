@@ -220,29 +220,45 @@ class Analysis:
         self.data["sent"] = self.data["sent"][:i]
         self.data["recv"] = self.data["recv"][:i]
 
+    """
+    Displays the difference in sent time data
+    
+    :param None:
+    :return: None
+    """
+    def display_sent(self):
+        seq = self.data["seq"]
+        sent = self.data["sent"]
+        recv = self.data["recv"]
+
+        sent_diff = [sent[i + 1] - sent[i] for i in range(len(sent) - 1)]
+        x = [i + 1 for i in range(len(sent_diff))]
+        avg_diff = sum(sent_diff) / len(sent_diff)
+        print("Average time difference for sent packets", avg_diff)
+        data = {"x": x, "y": sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
+        self.display_data(data, "scatter")
+
+    """
+    Displays the response time data
+
+    :param None:
+    :return: None
+    """
+    def display_response(self):
+        seq = self.data["seq"]
+        sent = self.data["sent"]
+        recv = self.data["recv"]
+
+        process_time = [recv[i] - sent[i] for i in range(len(sent))]
+        print("MIN process time", min(process_time))
+        print("MAX process time", max(process_time))
+        avg_process = sum(process_time) / len(process_time)
+        data = {"x": seq, "y": process_time, "x_label": "Packet id", "y_label": "Response Time"}
+        print("Average response time for packet", avg_process)
+        self.display_data(data, "scatter")
 
 
 if __name__=='__main__':
-    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-infinite-queue.txt")
-
-    seq = a.data["seq"]
-    sent = a.data["sent"]
-    recv = a.data["recv"]
-
-
-    sent_diff = [sent[i+1] - sent[i] for i in range(len(sent)-1)]
-    x = [i+1 for i in range(len(sent_diff))]
-    avg_diff = sum(sent_diff)/len(sent_diff)
-    print("Average time difference for sent packets", avg_diff)
-    data = {"x":x, "y":sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
-    a.display_data(data, "scatter")
-
-
-    process_time = [recv[i] - sent[i] for i in range(len(sent))]
-    print(min(process_time))
-    print(max(process_time))
-    avg_process = sum(process_time)/len(process_time)
-    data = {"x": seq, "y": process_time, "x_label": "Packet id", "y_label": "Process Time"}
-    print("Average process time for packet", avg_process)
-    a.display_data(data, "scatter")
-
+    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output--queue.txt")
+    a.display_sent()
+    a.display_response()

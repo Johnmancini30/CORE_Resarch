@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/parser/parser.py" line="105" mnemonic="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/compare" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-0-queue.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-0-queue.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/compare.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/compare.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,13 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="230" column="22" selection-start-line="230" selection-start-column="22" selection-end-line="230" selection-end-column="22" />
+            <state relative-caret-position="434">
+              <caret line="260" column="24" lean-forward="true" selection-start-line="260" selection-start-column="24" selection-end-line="260" selection-end-column="24" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parser/parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="769">
+              <caret line="103" column="102" selection-start-line="103" selection-start-column="102" selection-end-line="103" selection-end-column="102" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,9 +64,10 @@
         <option value="$PROJECT_DIR$/parser/parsing_instruction.py" />
         <option value="$PROJECT_DIR$/parser/output.txt" />
         <option value="$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt" />
-        <option value="$PROJECT_DIR$/parser/parser.py" />
         <option value="$PROJECT_DIR$/mgen_queue_experiment/compare" />
+        <option value="$PROJECT_DIR$/parser/parser.py" />
         <option value="$PROJECT_DIR$/parser/analysis.py" />
+        <option value="$PROJECT_DIR$/mgen_queue_experiment/compare.txt" />
       </list>
     </option>
   </component>
@@ -157,7 +164,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/parser.py" />
-      <option name="PARAMETERS" value="$PROJECT_DIR$/mgen_queue_experiment/log-output-infinite-queue.log $PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -290,20 +297,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32937366" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -335,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1476" column="3" lean-forward="true" selection-start-line="1476" selection-start-column="3" selection-end-line="1476" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-no-queue.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -358,25 +357,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-no-queue.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67110">
+          <caret line="4474" column="3" lean-forward="true" selection-start-line="4474" selection-start-column="3" selection-end-line="4474" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-infinite-queue.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser.py">
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-three-queue.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-59571" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-ten-queue.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-thirty-queue.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149541" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/parsed-output-thirty-queue.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-twentyfive-queue.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149586" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="226" column="30" selection-start-line="226" selection-start-column="30" selection-end-line="226" selection-end-column="30" />
+        <state relative-caret-position="434">
+          <caret line="260" column="24" lean-forward="true" selection-start-line="260" selection-start-column="24" selection-end-line="260" selection-end-column="24" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/compare.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="103" column="102" selection-start-line="103" selection-start-column="102" selection-end-line="103" selection-end-column="102" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
