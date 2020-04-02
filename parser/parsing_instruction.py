@@ -4,11 +4,10 @@ parsing_instructions.py: allows for different data to be parsed, so not all is i
 
 class Parsing_Instruction:
 
-    def __init__(self, recv=False, proto=False, flow=False, seq=False, src=False, dst=False, sent=False, size=False, gps=False):
+    def __init__(self, recv=False, proto=False, seq=False, src=False, dst=False, sent=False, size=False, gps=False):
 
         self.recv = recv
         self.proto = proto
-        self.flow = flow
         self.seq = seq
         self.src = src
         self.dst = dst

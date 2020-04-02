@@ -1,13 +1,15 @@
 from parsing_instruction import Parsing_Instruction
 import sys
 
+num_flows = 0
+
 """
 parser.py: parses the log file that is created when MGEN generates traffic
 """
 
 """
 Creates a file with the timestamps to be used later. The file format is for each parameter, it prints that parameter name and then
-all of the data corresponding to it below, then goes on to the next parameter
+all of the data corresponding to it below, then goes on to the next parameter. It prints to seperate files based on flow
 
 :param array[dict] data: an array of dictionaries, each one holding the timestamp data
 :param string write_name: name of file to write to
@@ -15,11 +17,14 @@ all of the data corresponding to it below, then goes on to the next parameter
 """
 def write_to_file(data, write_name):
 
-    with open(write_name, "w") as f:
-        for key in data[0].keys():
-            f.write(key + "\n")
-            for i in range(len(data)):
-                f.write(data[i][key] + "\n")
+    for flow in range(1, num_flows+1):
+        with open(write_name + str(flow) + ".txt", "w") as f:
+            for key in data[0].keys():
+                if key != "flow":
+                    f.write(key + "\n")
+                    for i in range(len(data)):
+                        if data[i]["flow"] == str(flow):
+                            f.write(data[i][key] + "\n")
 
         
 
@@ -44,18 +49,19 @@ def parse_timestamp(timestamp, instruction):
     info = timestamp.split(" ")
     #print(info)
     parsed_data = {}
-    
     if instruction.recv:
         parsed_data["recv"] = info[0]
     
 
     for line in info[2:]:
         tmp = line.split(">")
+
+        if tmp[0] == "flow":
+            parsed_data[tmp[0]] = tmp[1]
+            global num_flows
+            num_flows = max(num_flows, int(tmp[1]))
         
         if tmp[0] == "proto" and instruction.proto:
-            parsed_data[tmp[0]] = tmp[1]
-            
-        elif tmp[0] == "flow" and instruction.flow:
             parsed_data[tmp[0]] = tmp[1]
             
         elif tmp[0] == "seq" and instruction.seq:
@@ -99,6 +105,8 @@ def parse_file(file_name, instruction):
 
 
 if __name__=='__main__':
+
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    data = parse_file("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/log-output-twentyfive-queue.log", ins)
-    write_to_file(data, "/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output-twentyfive-queue.txt")
+    data = parse_file("/home/jm/Desktop/flow1.log", ins)
+    write_to_file(data, "/home/jm/Desktop/parsed_traffic")
+

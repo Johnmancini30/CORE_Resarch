@@ -105,6 +105,12 @@ class Analysis:
                 else:
                     to_ret[curr].append(int(lines[i]))
 
+                if curr == "recv":
+                    if "recv_raw" not in to_ret:
+                        to_ret["recv_raw"] = []
+                    if lines[i] != "recv":
+                        to_ret["recv_raw"].append(lines[i])
+
                 i+=1
 
         return to_ret
@@ -257,8 +263,33 @@ class Analysis:
         print("Average response time for packet", avg_process)
         self.display_data(data, "scatter")
 
+    """
+    This method creates the latency files that are created in the paper
+    
+    :param None:
+    :return: None:
+    """
+    def create_latency_file(self, file_name):
+        with open(file_name, "w") as f:
+            for i in range(len(a.data["recv"])):
+                f.write("sequence: " + str(a.data["seq"][i]) + " received: " + str(a.data["recv_raw"][i]) + " latency: " + str( round(a.data["recv"][i] - a.data["sent"][i], 7)) + "\n" )
+        #print(a.data)
+
+    """
+    M/M/1 Average Age
+    """
+    @staticmethod
+    def m_m_1_average_age(mu, lam):
+        return (1/mu)*(1 + (mu/lam) + (lam**2/(mu**2 - mu*lam)))
+
+    """
+    D/M/1 Average Age
+    """
+    @staticmethod
+    def d_m_1_average_age(mu, lam):
+
+
 
 if __name__=='__main__':
-    a = Analysis("/home/jm/Desktop/CORE_Research/mgen_queue_experiment/parsed-output--queue.txt")
-    a.display_sent()
-    a.display_response()
+    a = Analysis("/home/jm/Desktop/parsed_traffic1.txt")
+    a.create_latency_file("/home/jm/Desktop/latency1.txt")
