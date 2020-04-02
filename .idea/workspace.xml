@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/latency0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/latency0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/latency1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/latency2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/latency2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/latency3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/latency3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/latency4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parser/latency4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parser/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/traffic1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/plot.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parser/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="206" column="16" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
+            <state relative-caret-position="210">
+              <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -33,7 +26,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/latency3.txt">
+        <entry file="file://$PROJECT_DIR$/parser/latency2.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -378,9 +371,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/age.txt" />
     <entry file="file://$PROJECT_DIR$/parser/age1.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/latency1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -394,10 +384,19 @@
     <entry file="file://$PROJECT_DIR$/parser/latency3.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/parser/l0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/l2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/latency2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="206" column="16" selection-start-line="206" selection-start-column="16" selection-end-line="206" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="209" column="25" selection-start-line="209" selection-start-column="25" selection-end-line="209" selection-end-column="25" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>

@@ -206,6 +206,8 @@ def write_age_file(file_name, output_file_name, file_num):
     plt.axis("scaled")
     plt.legend()
     plt.xlim(0, 2.5)
+    plt.xlabel("Time (sec)")
+    plt.ylabel("Age (sec)")
     plt.show()
 
     """
@@ -228,11 +230,12 @@ Creates the files needed for experimentation
 def create_files(a, b):
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
     for i in range(a, b+1):
-        data = parse_file("/home/jm/Desktop/CORE_Research/parser/traffic", i, ins)
-        write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/latency", i)
-        write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", "/home/jm/Desktop/CORE_Research/parser/age", i)
+        data = parse_file("/home/jm/Desktop/CORE_Research/parser/t", i, ins)
+        write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/l", i)
+
 
 if __name__=='__main__':
-    create_files(3, 3)
+    #the best file seems to be latency3, l2
+    write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", "/home/jm/Desktop/CORE_Research/parser/age", 3)
 
 
