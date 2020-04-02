@@ -47,7 +47,6 @@ Parses a specific timestamp and stores it in a dictionary
 """
 def parse_timestamp(timestamp, instruction):
     info = timestamp.split(" ")
-    #print(info)
     parsed_data = {}
     if instruction.recv:
         parsed_data["recv"] = info[0]
@@ -86,15 +85,45 @@ def parse_timestamp(timestamp, instruction):
 
 
 """
+Does subtraction with two time stamps
+
+:param string: t1
+:param string: t2
+"""
+def subtract(t1, t2):
+    return round(convert_timestamp(t1) - convert_timestamp(t2), 6)
+
+"""
+Converts a timestamp to seconds
+
+:param float: time
+:return float:
+"""
+def convert_timestamp(time):
+    to_add = 0.0
+    fact = 60 * 60
+    tmp = time.split(":")
+
+    for num in tmp[:-1]:
+        to_add += int(num) * fact
+        fact /= 60
+
+    tmp = tmp[-1].split(".")
+    to_add += float(tmp[0]) + float("." + tmp[-1])
+
+    return round(to_add, 6)
+
+"""
 Parses the entire log file
 
 :param string file_name: name of the log file
+:param int file_num: counter of file
 :param Parsing_Instruction instruction: allows preference to what should be written
 :return: list of dictionaries
 """
-def parse_file(file_name, instruction):
+def parse_file(file_name, file_num, instruction):
     all_data = []
-    with open(file_name, "r") as f:
+    with open(file_name + str(file_num) + ".log", "r") as f:
         lines = f.read().split("\n")
         for ts in lines:
 
@@ -104,9 +133,43 @@ def parse_file(file_name, instruction):
     return all_data
 
 
-if __name__=='__main__':
+"""
+Writes to the output file, writes the sequence, latency, and reception time
 
+:param array[dict] data: an array of dictionaries, each one holding the timestamp data
+:param string file_name: name of file to write to
+:param int file_num: counter of file
+:return: None
+"""
+def write_latency_file(data, file_name, file_num):
+    with open(file_name + str(file_num) + ".txt", "w") as f:
+        for entry in data:
+            f.write("sequence:" + entry["seq"] + "|latency:" + str(subtract(entry["recv"], entry["sent"])) + "|reception:" + str(subtract(entry["recv"], data[0]["sent"])) + "\n")
+        f.write("total run time:" + str(subtract(data[-1]["recv"], data[0]["recv"])) + "\n")
+"""
+Creates a file that stores age as a function of time and calculates average age and average peak age
+
+:param string file_name: name of file
+:param int file_num: counter of file
+:return: None
+"""
+def write_age_file(file_name, file_num):
+    pass
+
+
+"""
+Creates the files needed for experimentation
+
+:param int n: number of files
+"""
+def create_files(n):
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    data = parse_file("/home/jm/Desktop/flow1.log", ins)
-    write_to_file(data, "/home/jm/Desktop/parsed_traffic")
+    for i in range(n):
+        data = parse_file("/home/jm/Desktop/CORE_Research/parser/traffic", i, ins)
+        write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/latency", i)
+        write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", i)
+
+if __name__=='__main__':
+    create_files(1)
+
 

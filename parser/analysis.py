@@ -3,6 +3,8 @@ import re
 
 KEY_WORDS = ["recv", "sent", "seq"]
 TIME_KEY_WORDS = ["recv", "sent"]
+
+
 """
 analysis.py: runs analysis on the data that was parsed
 """
@@ -13,7 +15,6 @@ class Analysis:
     """
     def __init__(self, file_name):
         self.fn = file_name
-        self.data = self.extract_data()
 
 
     """
@@ -44,8 +45,6 @@ class Analysis:
         tot = 0
         for key in list(cache.keys())[1:-1]:
             tot += cache[key]*125*8
-
-
 
 
     """
@@ -86,56 +85,8 @@ class Analysis:
     :return: dict of lists
     """
     def extract_data(self):
-        to_ret = {}
+        pass
 
-        with open(self.fn, "r") as f:
-
-            lines = f.read().split("\n")
-            curr = None
-            i = 0
-            while (i < len(lines)):
-                if all(c == " " for c in lines[i]):
-                    i+= 1
-                    continue
-                if lines[i] in KEY_WORDS:
-                    curr = lines[i]
-                    to_ret[curr] = []
-                elif curr in TIME_KEY_WORDS:
-                    to_ret[curr].append(self.convert_timestamp(lines[i]))
-                else:
-                    to_ret[curr].append(int(lines[i]))
-
-                if curr == "recv":
-                    if "recv_raw" not in to_ret:
-                        to_ret["recv_raw"] = []
-                    if lines[i] != "recv":
-                        to_ret["recv_raw"].append(lines[i])
-
-                i+=1
-
-        return to_ret
-
-
-    """
-    Converts a timestamp to seconds
-    
-    :param float: time
-    :return float:
-    """
-    @staticmethod
-    def convert_timestamp(time):
-        to_add = 0.0
-        fact = 60*60
-        tmp = time.split(":")
-
-        for num in tmp[:-1]:
-            to_add += int(num)*fact
-            fact/=60
-
-        tmp = tmp[-1].split(".")
-        to_add += float(tmp[0]) + float("." + tmp[-1])
-
-        return to_add
 
     """
     Calculates the age of information with data from one run
@@ -144,7 +95,10 @@ class Analysis:
     :param list: recv A list of times when te packets were received
     :return None:
     """
+
     def calculate_age(self, sent, recv):
+        pass
+        """
         n = 5
         age  = []
         time = []
@@ -169,14 +123,14 @@ class Analysis:
                 age.append(curr_age)
                 time.append(curr_time)
 
-
-
         print(sent)
         print(recv)
 
         data = {"x": time, "y": age, "x_label": "Time", "y_label": "Age"}
         plt.scatter(sent_time, [0 for i in range(len(sent_time))])
         self.display_data(data, "plot")
+        """
+
 
     """
     Sorts the various data by sequence number because sequence number is not always incremental.
@@ -209,6 +163,7 @@ class Analysis:
         for key in tmp:
             self.data[key] = tmp[key]
 
+
     """
     This method will remove the ending data where the certain sequences on not incremented by 1, because the traffic flow ended before the were received
     
@@ -226,13 +181,14 @@ class Analysis:
         self.data["sent"] = self.data["sent"][:i]
         self.data["recv"] = self.data["recv"][:i]
 
+
     """
     Displays the difference in sent time data
     
     :param None:
     :return: None
     """
-    def display_sent(self):
+    def analyze_interrarival(self):
         seq = self.data["seq"]
         sent = self.data["sent"]
         recv = self.data["recv"]
@@ -244,13 +200,14 @@ class Analysis:
         data = {"x": x, "y": sent_diff, "x_label": "Packet id", "y_label": "Time between sent"}
         self.display_data(data, "scatter")
 
+
     """
-    Displays the response time data
+    gets the average latency
 
     :param None:
     :return: None
     """
-    def display_response(self):
+    def analyze_latency(self):
         seq = self.data["seq"]
         sent = self.data["sent"]
         recv = self.data["recv"]
@@ -263,17 +220,7 @@ class Analysis:
         print("Average response time for packet", avg_process)
         self.display_data(data, "scatter")
 
-    """
-    This method creates the latency files that are created in the paper
-    
-    :param None:
-    :return: None:
-    """
-    def create_latency_file(self, file_name):
-        with open(file_name, "w") as f:
-            for i in range(len(a.data["recv"])):
-                f.write("sequence: " + str(a.data["seq"][i]) + " received: " + str(a.data["recv_raw"][i]) + " latency: " + str( round(a.data["recv"][i] - a.data["sent"][i], 7)) + "\n" )
-        #print(a.data)
+
 
     """
     M/M/1 Average Age
@@ -282,14 +229,15 @@ class Analysis:
     def m_m_1_average_age(mu, lam):
         return (1/mu)*(1 + (mu/lam) + (lam**2/(mu**2 - mu*lam)))
 
+
     """
     D/M/1 Average Age
     """
     @staticmethod
     def d_m_1_average_age(mu, lam):
+        pass
 
 
 
 if __name__=='__main__':
-    a = Analysis("/home/jm/Desktop/CORE_Research/parser/traffic.txt")
-    a.create_latency_file("/home/jm/Desktop/CORE_Research/parser/latency1.txt")
+    pass
