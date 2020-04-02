@@ -291,5 +291,5 @@ class Analysis:
 
 
 if __name__=='__main__':
-    a = Analysis("/home/jm/Desktop/parsed_traffic1.txt")
-    a.create_latency_file("/home/jm/Desktop/latency1.txt")
+    a = Analysis("/home/jm/Desktop/CORE_Research/parser/traffic.txt")
+    a.create_latency_file("/home/jm/Desktop/CORE_Research/parser/latency1.txt")
