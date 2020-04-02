@@ -1,4 +1,5 @@
 from parsing_instruction import Parsing_Instruction
+import matplotlib.pyplot as plt
 import sys
 
 num_flows = 0
@@ -144,8 +145,10 @@ Writes to the output file, writes the sequence, latency, and reception time
 def write_latency_file(data, file_name, file_num):
     with open(file_name + str(file_num) + ".txt", "w") as f:
         for entry in data:
-            f.write("sequence:" + entry["seq"] + "|latency:" + str(subtract(entry["recv"], entry["sent"])) + "|reception:" + str(subtract(entry["recv"], data[0]["sent"])) + "\n")
+            f.write("sequence:" + entry["seq"] + "|latency:" + str(subtract(entry["recv"], entry["sent"])) + "|reception:" + str(subtract(entry["recv"], data[0]["sent"])) + "|generation:" + str(subtract(entry["sent"], data[0]["sent"])) + "\n")
         f.write("total run time:" + str(subtract(data[-1]["recv"], data[0]["recv"])) + "\n")
+
+
 """
 Creates a file that stores age as a function of time and calculates average age and average peak age
 
@@ -153,23 +156,83 @@ Creates a file that stores age as a function of time and calculates average age 
 :param int file_num: counter of file
 :return: None
 """
-def write_age_file(file_name, file_num):
-    pass
+def write_age_file(file_name, output_file_name, file_num):
+    n = 10**6
+    m = {}
+    total_time = None
+    generation = []
+    with open(file_name + str(file_num) + ".txt", "r") as f:
+        for line in f.read().split("\n"):
+            if len(line):
+                if "sequence" in line:
+                    line = line.split("|")
+                    m[int(line[0].split(":")[1])] = [float(line[1].split(":")[1]), float(line[2].split(":")[1])]
+                    generation.append(float(line[3].split(":")[1]))
+                else:
+                    total_time = float(line.split(":")[1])
+
+    time = [round(i*(1/(n)), 6) for i in range(int(total_time*n) + 1)]
+    age = []
+
+    latency_x = []
+    latency_y = []
+    curr_age = None
+    seq = 0
+    for t in time:
+        if t >= 2.5:
+            break
+        if t == 0:
+            latency_x.append(t)
+            latency_y.append(m[seq][0])
+            curr_age = m[seq][0]
+            seq += 1
+        elif t >= m[seq][1]:
+            latency_x.append(m[seq][1])
+            latency_y.append(m[seq][0])
+            curr_age = m[seq][0]
+            seq += 1
+        else:
+            curr_age += time[1]
+
+        age.append(round(curr_age, 6))
+
+    time = time[0:len(age)]
+    gen = [generation[i] for i in range(1, len(generation)) if generation[i] <= time[-1]]
+    x = [0 for i in range(len(gen))]
+
+    plt.plot(time, age, color="green", label= "Age")
+    plt.scatter(gen, x, color="red", label="Packet Generation")
+    plt.scatter(latency_x, latency_y, label="Latency", s=50, facecolors='none', edgecolors='b')
+    plt.axis("scaled")
+    plt.legend()
+    plt.xlim(0, 2.5)
+    plt.show()
+
+    """
+    with open(output_file_name + str(file_num) + ".txt", "w") as f:
+        f.write("time|age|" + str(n) + "\n")
+        for i in range(len(age)):
+            f.write(str(time[i]) + "|" + str(age[i]) + "\n")
+        f.write("generation")
+        for t in generation:
+            f.write(str(t) + "\n")
+    """
 
 
 """
 Creates the files needed for experimentation
 
-:param int n: number of files
+:param int a: start file number
+:param int b: end file number
 """
-def create_files(n):
+def create_files(a, b):
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    for i in range(n):
+    for i in range(a, b+1):
         data = parse_file("/home/jm/Desktop/CORE_Research/parser/traffic", i, ins)
         write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/latency", i)
-        write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", i)
+        write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", "/home/jm/Desktop/CORE_Research/parser/age", i)
 
 if __name__=='__main__':
-    create_files(1)
+    create_files(3, 3)
 
 
