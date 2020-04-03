@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import os
 import re
 
 KEY_WORDS = ["recv", "sent", "seq"]
@@ -7,6 +8,8 @@ TIME_KEY_WORDS = ["recv", "sent"]
 
 """
 analysis.py: runs analysis on the data that was parsed
+
+Curently the analysis class is not necessary for replicating the experiment, it was just helpful to me personally
 """
 class Analysis:
 
@@ -237,18 +240,29 @@ def m_m_1_average_age(mu, lam):
     def d_m_1_average_age(mu, lam):
         pass
 
-"""
-parses the age files and plots the average age, average latency, and theoretical results
 
+"""
+plot the age files and plots the average age, average latency, and theoretical results
+
+:param string directory_name:
 :return None:
 """
-def parse_age():
+def plot_age(directory_name):
+    if directory_name[-1] != "/":
+        directory_name += "/"
+
     avg_age = []
     avg_latency = []
     avg_inter = []
-    file_name = "/home/jm/Desktop/CORE_Research/parser/age"
-    for i in range(0, 12):
-        with open(file_name + str(i) + ".txt", "r") as f:
+    files = None
+    try:
+        files = sorted([file for file in os.listdir(directory_name) if "age" in file], key = lambda x: int(''.join(re.findall(r'\d+', x))))
+    except:
+        print("Incorrect directory name or no age files in it")
+        return
+
+    for file_name in files:
+        with open(directory_name + file_name, "r") as f:
             line = f.read().split("\n")
             avg_age.append(float(line[0].split(":")[1]))
             avg_latency.append(float(line[1].split(":")[1]))
@@ -274,4 +288,4 @@ def parse_age():
 
 
 if __name__=='__main__':
-    parse_age()
+    plot_age("/home/jm/Desktop/CORE_Research/parser/data")
