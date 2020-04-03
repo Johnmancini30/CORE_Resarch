@@ -225,9 +225,9 @@ class Analysis:
     """
     M/M/1 Average Age
     """
-    @staticmethod
-    def m_m_1_average_age(mu, lam):
-        return (1/mu)*(1 + (mu/lam) + (lam**2/(mu**2 - mu*lam)))
+    #@staticmethod
+def m_m_1_average_age(mu, lam):
+    return (1/mu)*(1 + (mu/lam) + (lam**2/(mu**2 - mu*lam)))
 
 
     """
@@ -237,8 +237,40 @@ class Analysis:
     def d_m_1_average_age(mu, lam):
         pass
 
+"""
+parses the age files and plots the average age, average latency, and theoretical results
+
+:return None:
+"""
+def parse_age():
+    avg_age = []
+    avg_latency = []
+    avg_inter = []
+    file_name = "/home/jm/Desktop/CORE_Research/parser/age"
+    for i in range(0, 12):
+        with open(file_name + str(i) + ".txt", "r") as f:
+            line = f.read().split("\n")
+            avg_age.append(float(line[0].split(":")[1]))
+            avg_latency.append(float(line[1].split(":")[1]))
+            avg_inter.append(float(line[2].split(":")[1]))
+
+    x = [.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.9]
+    theor_age = [m_m_1_average_age(.10001, x[i]) for i in range(len(x))]
+    plt.plot(x, avg_latency, color="black", label="Latency")
+    plt.plot(x, avg_inter, color="blue", label="Interrarival")
+    plt.plot(x, avg_age, color="red", label="Age")
+
+    plt.scatter(x, avg_latency, color="black")
+    plt.scatter(x, avg_inter, color="blue")
+    plt.scatter(x, avg_age, color="red")
+
+
+    plt.legend()
+    plt.xlabel("Rate [packet/second]")
+    plt.ylabel("Average Age [seconds]")
+
+    plt.show()
 
 
 if __name__=='__main__':
-    plt.plot([1, 2, 3], [1, 2, 3])
-    plt.show()
+    parse_age()

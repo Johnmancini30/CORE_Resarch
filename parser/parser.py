@@ -156,12 +156,12 @@ Creates a file that stores age as a function of time and calculates average age 
 :param int file_num: counter of file
 :return: None
 """
-def write_age_file(file_name, output_file_name, file_num):
+def write_age_file(file_name, output_file_name, plot=False):
     n = 10**6
     m = {}
     total_time = None
     generation = []
-    with open(file_name + str(file_num) + ".txt", "r") as f:
+    with open(file_name, "r") as f:
         for line in f.read().split("\n"):
             if len(line):
                 if "sequence" in line:
@@ -179,8 +179,6 @@ def write_age_file(file_name, output_file_name, file_num):
     curr_age = None
     seq = 0
     for t in time:
-        if t >= 2.5:
-            break
         if t == 0:
             latency_x.append(t)
             latency_y.append(m[seq][0])
@@ -200,25 +198,31 @@ def write_age_file(file_name, output_file_name, file_num):
     gen = [generation[i] for i in range(1, len(generation)) if generation[i] <= time[-1]]
     x = [0 for i in range(len(gen))]
 
-    plt.plot(time, age, color="green", label= "Age")
-    plt.scatter(gen, x, color="red", label="Packet Generation")
-    plt.scatter(latency_x, latency_y, label="Latency", s=50, facecolors='none', edgecolors='b')
-    plt.axis("scaled")
-    plt.legend()
-    plt.xlim(0, 2.5)
-    plt.xlabel("Time (sec)")
-    plt.ylabel("Age (sec)")
-    plt.show()
+    if plot:
+        plt.plot(time, age, color="green", label= "Age")
+        plt.scatter(gen, x, color="red", label="Packet Generation")
+        plt.scatter(latency_x, latency_y, label="Latency", s=50, facecolors='none', edgecolors='b')
+        plt.axis("scaled")
+        plt.legend()
+        plt.xlim(0, 2.5)
+        plt.xlabel("Time (sec)")
+        plt.ylabel("Age (sec)")
+        plt.show()
 
-    """
-    with open(output_file_name + str(file_num) + ".txt", "w") as f:
+
+    latency = [m[i][0] for i in m.keys()]
+    with open(output_file_name, "w") as f:
+        f.write("Average Age:" + str(sum(age)/len(age)) + "\n")
+        f.write("Average Latency:" + str(sum(latency)/len(latency)) + "\n")
+        """
         f.write("time|age|" + str(n) + "\n")
         for i in range(len(age)):
             f.write(str(time[i]) + "|" + str(age[i]) + "\n")
         f.write("generation")
         for t in generation:
             f.write(str(t) + "\n")
-    """
+        """
+
 
 
 """
@@ -230,12 +234,47 @@ Creates the files needed for experimentation
 def create_files(a, b):
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
     for i in range(a, b+1):
-        data = parse_file("/home/jm/Desktop/CORE_Research/parser/t", i, ins)
-        write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/l", i)
+        data = parse_file("/home/jm/Desktop/CORE_Research/parser/traffic", i, ins)
+        write_latency_file(data, "/home/jm/Desktop/CORE_Research/parser/latency", i)
 
+
+def f():
+    file_name = "/home/jm/Desktop/CORE_Research/parser/latency"
+    inter = []
+    for i in range(0, 12):
+        with open(file_name + str(i) + ".txt", "r") as f:
+            tmp = []
+            for line in f.read().split("\n"):
+                if "sequence" in line:
+                    tmp.append(float(line.split("|")[3].split(":")[1]))
+
+            tmp = [tmp[i] - tmp[i-1] for i in range(1, len(tmp))]
+            inter.append(sum(tmp)/(len(tmp)))
+
+    #print(inter)
+    write_name = "/home/jm/Desktop/CORE_Research/parser/age"
+
+    for i in range(0, 12):
+        with open(write_name + str(i) + ".txt", "a") as f:
+            f.write("Average Interrarival:" + str(inter[i]))
 
 if __name__=='__main__':
-    #the best file seems to be latency3, l2
-    write_age_file("/home/jm/Desktop/CORE_Research/parser/latency", "/home/jm/Desktop/CORE_Research/parser/age", 3)
+    """
+    0: lambda = .1
+    1: lambda = 1
+    i: lambda = i for i = 2, ... , 9
+    10: lambda = 9.5
+    11: lambda = 9.9
+    
+    """
+    #create_files(0, 11)
 
+    #the best file seems to be latency3, l2
+    """
+    file_name = "/home/jm/Desktop/CORE_Research/parser/latency"
+    write_name = "/home/jm/Desktop/CORE_Research/parser/age"
+    for i in range(0, 12):
+        write_age_file(file_name + str(i) + ".txt", write_name + str(i) + ".txt")
+    """
+    pass
 
