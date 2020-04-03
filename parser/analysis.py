@@ -256,6 +256,7 @@ def parse_age():
 
     x = [.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.9]
     theor_age = [m_m_1_average_age(.10001, x[i]) for i in range(len(x))]
+    print(theor_age)
     plt.plot(x, avg_latency, color="black", label="Latency")
     plt.plot(x, avg_inter, color="blue", label="Interrarival")
     plt.plot(x, avg_age, color="red", label="Age")
