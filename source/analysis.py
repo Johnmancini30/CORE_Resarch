@@ -99,40 +99,6 @@ class Analysis:
     :return None:
     """
 
-    def calculate_age(self, sent, recv):
-        pass
-        """
-        n = 5
-        age  = []
-        time = []
-        sent_time = []
-
-        curr_time = 0
-        curr_age = recv[0] - sent[0]
-        for i in range(len(sent) - 1):
-            curr_age = recv[i] - sent[i]
-            age.append(curr_age)
-            time.append(curr_time)
-            sent_time.append(sent[i+1] - recv[0])
-            print(age[-1])
-            print(time[-1])
-            print(sent_time[-1])
-
-
-            to_add = (recv[i+1] - recv[i])/n
-            for j in range(n):
-                curr_time += to_add
-                curr_age += to_add
-                age.append(curr_age)
-                time.append(curr_time)
-
-        print(sent)
-        print(recv)
-
-        data = {"x": time, "y": age, "x_label": "Time", "y_label": "Age"}
-        plt.scatter(sent_time, [0 for i in range(len(sent_time))])
-        self.display_data(data, "plot")
-        """
 
 
     """
@@ -247,37 +213,45 @@ plot the age files and plots the average age, average latency, and theoretical r
 :param string directory_name:
 :return None:
 """
-def plot_age(directory_name):
-    if directory_name[-1] != "/":
-        directory_name += "/"
+def plot_age(directory_name, num_directories):
 
     avg_age = []
     avg_latency = []
     avg_inter = []
-    files = None
-    try:
-        files = sorted([file for file in os.listdir(directory_name) if "age" in file], key = lambda x: int(''.join(re.findall(r'\d+', x))))
-    except:
-        print("Incorrect directory name or no age files in it")
-        return
 
-    for file_name in files:
-        with open(directory_name + file_name, "r") as f:
-            line = f.read().split("\n")
-            avg_age.append(float(line[0].split(":")[1]))
-            avg_latency.append(float(line[1].split(":")[1]))
-            avg_inter.append(float(line[2].split(":")[1]))
+    for i in range(num_directories):
+        dir_name = directory_name + str(i) + "/"
 
-    x = [.1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.9]
-    theor_age = [m_m_1_average_age(.10001, x[i]) for i in range(len(x))]
-    print(theor_age)
+        age = []
+        latency = []
+        inter = []
+        files = None
+        try:
+            files = sorted([file for file in os.listdir(dir_name) if "age" in file], key = lambda x: int(''.join(re.findall(r'\d+', x))))
+        except:
+            print("Incorrect directory name or no age files in it")
+            print(dir_name)
+            return
+
+        for file_name in files:
+            with open(dir_name + file_name, "r") as f:
+                line = f.read().split("\n")
+                age.append(float(line[0].split(":")[1]))
+                latency.append(float(line[2].split(":")[1]))
+                inter.append(float(line[3].split(":")[1]))
+
+        avg_age.append(sum(age)/len(age))
+        avg_latency.append(sum(latency)/len(latency))
+        avg_inter.append(sum(inter)/len(inter))
+
+    x = [.3, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.7]
     plt.plot(x, avg_latency, color="black", label="Latency")
     plt.plot(x, avg_inter, color="blue", label="Interrarival")
-    plt.plot(x, avg_age, color="red", label="Age")
+    #plt.plot(x, avg_age, color="red", label="Age")
 
     plt.scatter(x, avg_latency, color="black")
     plt.scatter(x, avg_inter, color="blue")
-    plt.scatter(x, avg_age, color="red")
+    #plt.scatter(x, avg_age, color="red")
 
 
     plt.legend()
@@ -288,4 +262,4 @@ def plot_age(directory_name):
 
 
 if __name__=='__main__':
-    plot_age("/home/jm/Desktop/CORE_Research/parser/data")
+    plot_age("/home/jm/Desktop/CORE_Research/data/data", 13)

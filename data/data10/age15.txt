@@ -1,0 +1,4 @@
+Average Age:17.55714593875375
+Average Peak Age:18.170984977011493
+Average Latency:0.5319129195402299
+Average Interarrival:0.10582003448275863

@@ -2,43 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/source/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency0.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic1.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic2.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic3.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic4.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/data/traffic9.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,23 +15,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/bot.py">
+        <entry file="file://$PROJECT_DIR$/source/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="914">
-              <caret line="92" column="99" selection-start-line="92" selection-start-column="99" selection-end-line="92" selection-end-column="99" />
+            <state relative-caret-position="419">
+              <caret line="253" column="24" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#0#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/parser.py">
+        <entry file="file://$PROJECT_DIR$/source/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3325">
+            <state relative-caret-position="194">
+              <caret line="246" column="53" selection-start-line="246" selection-start-column="53" selection-end-line="246" selection-end-column="53" />
               <folding>
-                <element signature="e#0#51#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,16 +65,18 @@
         <option value="$PROJECT_DIR$/parser/parsing_instruction.py" />
         <option value="$PROJECT_DIR$/parser/parser.py" />
         <option value="$PROJECT_DIR$/parser/analysis.py" />
-        <option value="$PROJECT_DIR$/source/analysis.py" />
         <option value="$PROJECT_DIR$/source/bot.py" />
+        <option value="$PROJECT_DIR$/data/data0/latency14.txt" />
+        <option value="$PROJECT_DIR$/source/parser.py" />
+        <option value="$PROJECT_DIR$/source/analysis.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="77" />
-    <option name="y" value="47" />
-    <option name="width" value="1279" />
-    <option name="height" value="701" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -115,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,22 +95,33 @@
             <path>
               <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
               <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="data0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/source" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source" />
       <recent name="$PROJECT_DIR$/parser" />
     </key>
   </component>
@@ -156,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bot">
+  <component name="RunManager" selected="Python.analysis">
     <configuration name="analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CORE_Resarch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -165,11 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parser" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/analysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/analysis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,11 +188,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/parser" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/source" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser/parser.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/source/parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,9 +208,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bot" />
         <item itemvalue="Python.analysis" />
         <item itemvalue="Python.parser" />
+        <item itemvalue="Python.bot" />
       </list>
     </recent_temporary>
   </component>
@@ -391,94 +372,146 @@
     <option name="LAST_COMMIT_MESSAGE" value="most recent" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/log-output-twentyfive-queue.log" />
-    <entry file="file://$PROJECT_DIR$/mgen_queue_experiment/compare.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic4.log" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic0.log" />
-    <entry file="file://$PROJECT_DIR$/parser/age.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/l0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/l2.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency2.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/plot2.png" />
-    <entry file="file://$PROJECT_DIR$/parser/age9.5.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic1.log" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic8.log" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic9.log" />
-    <entry file="file://$PROJECT_DIR$/parser/traffic3.log" />
-    <entry file="file://$PROJECT_DIR$/parser/latency1.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency3.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency5.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age9.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age5.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age2.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age8.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age7.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age6.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age4.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age3.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age10.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency11.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age1.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/age11.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/latency4.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/parsing_instruction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/extra_data/traffic0.log" />
-    <entry file="file://$PROJECT_DIR$/parser/data/latency2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/data/traffic2.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/data/latency0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/data/latency2.txt" />
+    <entry file="file://$PROJECT_DIR$/parser/data/traffic2.log" />
+    <entry file="file://$PROJECT_DIR$/parser/data/latency0.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency1.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency2.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency3.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency4.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/data/latency11.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-861" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/data/latency11.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency15.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/latency0.txt" />
     <entry file="file://$PROJECT_DIR$/parser/extra_data/age0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/data/age0.txt">
+    <entry file="file://$PROJECT_DIR$/parser/data/age0.txt" />
+    <entry file="file://$PROJECT_DIR$/parser/analysis.py" />
+    <entry file="file://$PROJECT_DIR$/parser/parser.py" />
+    <entry file="file://$PROJECT_DIR$/source/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="92" column="99" selection-start-line="92" selection-start-column="99" selection-end-line="92" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency0.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/analysis.py">
+    <entry file="file://$PROJECT_DIR$/data/data0/latency9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency6.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="290" column="8" selection-start-line="290" selection-start-column="8" selection-end-line="290" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/parser.py">
+    <entry file="file://$PROJECT_DIR$/data/data0/latency10.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency11.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency12.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency13.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="259" lean-forward="true" selection-start-line="258" selection-start-column="35" selection-end-line="259" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency14.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age13.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age12.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age11.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age10.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/latency8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data12/age0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data12/age2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data12/age4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data12/age6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data12/age8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data11/age0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data11/age2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data11/age9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data11/age1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data0/age0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/source/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1290">
-          <caret line="73" column="30" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
+        <state relative-caret-position="194">
+          <caret line="246" column="53" selection-start-line="246" selection-start-column="53" selection-end-line="246" selection-end-column="53" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -487,19 +520,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3325">
+        <state relative-caret-position="419">
+          <caret line="253" column="24" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="92" column="99" selection-start-line="92" selection-start-column="99" selection-end-line="92" selection-end-column="99" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

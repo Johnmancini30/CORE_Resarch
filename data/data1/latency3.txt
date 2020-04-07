@@ -1,0 +1,6 @@
+sequence:0|latency:0.14172|reception:0.14172|generation:0.0
+sequence:1|latency:0.15842|reception:0.679942|generation:0.521522
+sequence:2|latency:0.096028|reception:2.355098|generation:2.25907
+sequence:3|latency:0.149614|reception:3.340559|generation:3.190945
+sequence:4|latency:0.10398|reception:3.875293|generation:3.771313
+total run time:3.733573

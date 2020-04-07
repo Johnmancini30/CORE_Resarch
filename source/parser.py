@@ -5,7 +5,7 @@ import re
 num_flows = 0
 
 """
-parser.py: parses a directory contianing MGEN logging files. From them it creates a corresponding latency file, and from that it creates a corresponding age file
+parser.py: parses a directory containing MGEN logging files. From them it creates a corresponding latency file, and from that it creates a corresponding age file
 
 NOTE: 
 1. When creating the log file names in your directory, label them sequential in the way you want the latency and age files to be created by putting a number in there somewhere. So if you
@@ -153,8 +153,7 @@ def parse_file(directory_name, instruction):
         latency_file_name = directory_name + "latency" + file_num + ".txt"
         write_latency_file(all_data, latency_file_name)
 
-        age_file_name = directory_name + "age" + file_num + ".txt"
-        write_age_file(latency_file_name, age_file_name, plot=False)
+
 
 
 """
@@ -179,74 +178,56 @@ Creates a file that stores age as a function of time and calculates average age 
 :param int file_num: counter of file
 :return: None
 """
-def write_age_file(file_name, output_file_name, plot=False):
-    n = 10**6
-    m = {}
-    total_time = None
-    generation = []
+def write_age_file(directory_name):
+    if directory_name[-1] != "/":
+        directory_name += "/"
 
-    #stores all values in m from latency files, and also stores total time of the run
-    with open(file_name, "r") as f:
-        for line in f.read().split("\n"):
-            if len(line):
+    files = None
+    try:
+        files = sorted([file for file in os.listdir(directory_name) if "latency" in file], key = lambda x: int(''.join(re.findall(r'\d+', x))))
+    except:
+        print("Directory Not Found")
+        return
+
+
+    for file_name in files:
+        serTimes = []
+        arrival = []
+
+        with open(directory_name + file_name) as f:
+            for line in f.read().split("\n"):
                 if "sequence" in line:
                     line = line.split("|")
-                    m[int(line[0].split(":")[1])] = [float(line[1].split(":")[1]), float(line[2].split(":")[1])]
-                    generation.append(float(line[3].split(":")[1]))
-                else:
-                    total_time = float(line.split(":")[1])
+                    serTimes.append(float(line[1].split(":")[1]))
+                    arrival.append(float(line[3].split(":")[1]))
 
-    #an array of each millionth of a second from 0 to total_time
-    time = [round(i*(1/(n)), 6) for i in range(int(total_time*n) + 1)]
-    age = []
+        interArrTimes = [0] + [arrival[i] - arrival[i-1] for i in range(1, len(arrival))]
 
+        total_run_time = 10.0
 
+        requestNum = len(serTimes)
 
-    latency_x = [] #for plotting purposes only
-    latency_y = []
+        totalAoI = 0
+        lastWaitTime = 0
+        totalPeakAoI = 0
 
+        for i in range(1, requestNum):
+            lastWaitTime = max(lastWaitTime + serTimes[i - 1] - interArrTimes[i], 0)
+            totalAoI += interArrTimes[i] * (lastWaitTime + serTimes[i]) + (interArrTimes[i] ** 2) / 2
+            totalPeakAoI += lastWaitTime + serTimes[i] + interArrTimes[i]
 
-    curr_age = None
-    seq = 0
-    for t in time:
-        if t == 0:
-            latency_x.append(t)
-            latency_y.append(m[seq][0])
-            curr_age = m[seq][0]
-            seq += 1
-        elif t >= m[seq][1]:
-            latency_x.append(m[seq][1])
-            latency_y.append(m[seq][0])
-            curr_age = m[seq][0]
-            seq += 1
-        else:
-            curr_age += time[1]
+        avgAoI = totalAoI / total_run_time
+        avgPeakAoI = totalPeakAoI / requestNum
 
-        age.append(round(curr_age, 6))
+        file_num = ''.join(re.findall(r'\d+', file_name))
+        latency_file_name = directory_name + "age" + file_num + ".txt"
 
-    time = time[0:len(age)]
-
-    if plot:
-        gen = [generation[i] for i in range(1, len(generation)) if generation[i] <= time[-1]]
-        x = [0 for i in range(len(gen))]
-        plt.plot(time, age, color="green", label= "Age")
-        plt.scatter(gen, x, color="red", label="Packet Generation")
-        plt.scatter(latency_x, latency_y, label="Latency", s=50, facecolors='none', edgecolors='b')
-        plt.axis("scaled")
-        plt.legend()
-        plt.xlim(0, 2.5)
-        plt.xlabel("Time (sec)")
-        plt.ylabel("Age (sec)")
-        plt.show()
-
-
-    #writing to the file
-    latency = [m[key][0] for key in m.keys()]
-    interarrival = [generation[i] - generation[i-1] for i in range(1, len(generation))]
-    with open(output_file_name, "w") as f:
-        f.write("Average Age:" + str(sum(age)/len(age)) + "\n")
-        f.write("Average Latency:" + str(sum(latency)/len(latency)) + "\n")
-        f.write("Average Interarrival:" + str(sum(interarrival)/len(interarrival)) + "\n")
+        #writing to the file
+        with open(latency_file_name, "w") as f:
+            f.write("Average Age:" + str(avgAoI) + "\n")
+            f.write("Average Peak Age:" + str(avgPeakAoI) + "\n")
+            f.write("Average Latency:" + str(sum(serTimes)/len(serTimes)) + "\n")
+            f.write("Average Interarrival:" + str(sum(interArrTimes)/len(interArrTimes)) + "\n")
 
 
 """
@@ -256,7 +237,8 @@ Creates the files needed for experimentation. Put all of your logging files in o
 :param Instruction ins: the parsing instructions 
 """
 def create_files(directory_name, ins):
-    parse_file(directory_name, ins)
+    #parse_file(directory_name, ins)
+    write_age_file(directory_name)
 
 
 if __name__=='__main__':
@@ -269,5 +251,7 @@ if __name__=='__main__':
     """
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    create_files("/home/jm/Desktop/CORE_Research/parser/data", ins)
+    for i in range(0, 13):
+        dir = "/home/jm/Desktop/CORE_Research/data/data"
+        create_files(dir + str(i) + "/", ins)
 
