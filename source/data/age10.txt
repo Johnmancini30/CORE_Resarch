@@ -1,3 +1,0 @@
-Average Age:1.3205685536863474
-Average Latency:1.317932724137931
-Average Interrarival:0.08642941860465116
