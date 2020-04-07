@@ -68,10 +68,10 @@ class Analysis:
         except:
             print("Missing x or y data")
 
-        if "x_label" in data:
-            plt.xlabel(data["x_label"])
-        if "y_label" in data:
-            plt.ylabel(data["y_label"])
+        if "xlabel" in data:
+            plt.xlabel(data["xlabel"])
+        if "ylabel" in data:
+            plt.ylabel(data["ylabel"])
 
         if plot_type == "plot":
             plt.plot(x, y)
