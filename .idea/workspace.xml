@@ -1,658 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/source/analysis.py" line="260" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data0/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data0/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data0/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data0/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data0/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data0/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data1/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data1/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data1/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data1/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data1/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data1/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data10/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data10/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data10/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data10/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data10/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data10/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data11/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data11/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data11/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data11/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data11/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data11/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data12/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data12/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data12/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data12/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data12/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data12/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data2/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data2/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data3/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data3/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data3/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data3/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data3/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data3/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data4/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data4/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data4/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data4/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data4/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data4/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data5/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data5/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data5/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data5/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data5/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data5/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data6/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data6/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data6/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data6/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data6/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data6/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data7/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data7/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data7/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data7/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data7/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data7/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data8/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data8/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data8/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data8/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data8/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data8/traffic9.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data9/age0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data9/age1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data9/age2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data9/age3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/data9/age4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/age9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency11.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency19.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/latency9.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic11.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic12.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic14.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic15.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic16.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic17.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic19.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic5.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic6.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic7.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic8.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data9/traffic9.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/bot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/parser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -666,10 +20,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="197" column="24" selection-start-line="197" selection-start-column="24" selection-end-line="197" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="265" column="4" selection-start-line="265" selection-start-column="4" selection-end-line="265" selection-end-column="4" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/bot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-241">
+              <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -678,12 +44,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+            <state relative-caret-position="374">
+              <caret line="259" column="14" selection-start-line="259" selection-start-column="14" selection-end-line="259" selection-end-column="14" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data3/data4/latency0.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data3/data4/traffic0.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="-1086" />
           </provider>
         </entry>
       </file>
@@ -699,6 +77,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>SENT</find>
+      <find>parse_time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -714,8 +93,11 @@
         <option value="$PROJECT_DIR$/parser/parsing_instruction.py" />
         <option value="$PROJECT_DIR$/parser/parser.py" />
         <option value="$PROJECT_DIR$/parser/analysis.py" />
-        <option value="$PROJECT_DIR$/source/bot.py" />
         <option value="$PROJECT_DIR$/data/data0/latency14.txt" />
+        <option value="$PROJECT_DIR$/data3/data6/age1.txt" />
+        <option value="$PROJECT_DIR$/data3/data6/age9.txt" />
+        <option value="$PROJECT_DIR$/data3/data6/age0.txt" />
+        <option value="$PROJECT_DIR$/source/bot.py" />
         <option value="$PROJECT_DIR$/source/parser.py" />
         <option value="$PROJECT_DIR$/source/analysis.py" />
       </list>
@@ -744,7 +126,13 @@
             <path>
               <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
               <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="data3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
+              <item name="data3" type="462c0819:PsiDirectoryNode" />
+              <item name="data12" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
@@ -1000,6 +388,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1852459" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pycharm" />
@@ -1015,116 +422,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="most recent" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/latency2.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/latency3.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/latency4.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/data/latency11.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/latency15.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/latency0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/extra_data/age0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/data/age0.txt" />
-    <entry file="file://$PROJECT_DIR$/parser/analysis.py" />
-    <entry file="file://$PROJECT_DIR$/parser/parser.py" />
-    <entry file="file://$PROJECT_DIR$/source/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="92" column="99" selection-start-line="92" selection-start-column="99" selection-end-line="92" selection-end-column="99" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency9.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency6.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency11.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency12.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency13.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency14.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age13.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age12.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age11.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age10.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age9.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/latency8.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age8.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age5.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data0/age2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12/age0.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12/age2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12/age4.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12/age6.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/data12/age8.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/data11/age0.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1161,20 +458,154 @@
     <entry file="file://$PROJECT_DIR$/data/data0/age0.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data10/latency7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data0/age9.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age5.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age7.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age8.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age9.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/age4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data6/latency4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data7/latency0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data7/latency1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data7/latency2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data7/latency3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data4/latency3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data4/latency2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data4/latency1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data4/latency0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data12/traffic0.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-696" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data12/latency0.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data3/data4/traffic0.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-1086" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="197" column="24" selection-start-line="197" selection-start-column="24" selection-end-line="197" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="265" column="4" selection-start-line="265" selection-start-column="4" selection-end-line="265" selection-end-column="4" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="66" column="22" selection-start-line="66" selection-start-column="22" selection-end-line="66" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/source/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+        <state relative-caret-position="374">
+          <caret line="259" column="14" selection-start-line="259" selection-start-column="14" selection-end-line="259" selection-end-column="14" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

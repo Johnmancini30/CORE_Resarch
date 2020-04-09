@@ -63,11 +63,6 @@ def parse_timestamp(timestamp, instruction):
 
     for line in info[2:]:
         tmp = line.split(">")
-
-        if tmp[0] == "flow":
-            parsed_data[tmp[0]] = tmp[1]
-            global num_flows
-            num_flows = max(num_flows, int(tmp[1]))
         
         if tmp[0] == "proto" and instruction.proto:
             parsed_data[tmp[0]] = tmp[1]
@@ -231,7 +226,6 @@ def write_age_file(directory_name):
 
 
         else:
-            total_run_time = 10.0
             requestNum = len(serTimes)
 
             totalAoI = 0
@@ -243,7 +237,7 @@ def write_age_file(directory_name):
                 totalAoI += interArrTimes[i] * (lastWaitTime + serTimes[i]) + (interArrTimes[i] ** 2) / 2
                 totalPeakAoI += lastWaitTime + serTimes[i] + interArrTimes[i]
 
-            avgAoI = totalAoI / total_run_time
+            avgAoI = totalAoI / RECV[-1]
             avgPeakAoI = totalPeakAoI / requestNum
 
 
@@ -268,7 +262,7 @@ Creates the files needed for experimentation. Put all of your logging files in o
 :param Instruction ins: the parsing instructions 
 """
 def create_files(directory_name, ins):
-    #parse_file(directory_name, ins)
+    parse_file(directory_name, ins)
     write_age_file(directory_name)
 
 
@@ -282,7 +276,7 @@ if __name__=='__main__':
     """
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    dir = "/home/jm/Desktop/CORE_Research/data/data"
+    dir = "/home/jm/Desktop/CORE_Research/data3/data"
     for i in range(13):
         dir_name = dir + str(i)
         create_files(dir_name, ins)
