@@ -247,12 +247,11 @@ def plot_age(directory_name, num_directories):
     x = [.3, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.7]
     plt.plot(x, avg_latency, color="black", label="Latency")
     plt.plot(x, avg_inter, color="blue", label="Interrarival")
-    #plt.plot(x, avg_age, color="red", label="Age")
+    plt.plot(x, avg_age, color="red", label="Age")
 
     plt.scatter(x, avg_latency, color="black")
     plt.scatter(x, avg_inter, color="blue")
-    #plt.scatter(x, avg_age, color="red")
-
+    plt.scatter(x, avg_age, color="red")
 
     plt.legend()
     plt.xlabel("Rate [packet/second]")
@@ -262,4 +261,4 @@ def plot_age(directory_name, num_directories):
 
 
 if __name__=='__main__':
-    plot_age("/home/jm/Desktop/CORE_Research/data/data", 13)
+    plot_age("/home/jm/Desktop/CORE_Research/data2/data", 13)

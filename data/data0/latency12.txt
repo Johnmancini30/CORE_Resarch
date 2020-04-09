@@ -1,2 +1,0 @@
-sequence:0|latency:0.119216|reception:0.119216|generation:0.0
-total run time:0.0

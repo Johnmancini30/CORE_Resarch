@@ -2,7 +2,7 @@ from parsing_instruction import Parsing_Instruction
 import matplotlib.pyplot as plt
 import os
 import re
-num_flows = 0
+DEBUG = False
 
 """
 parser.py: parses a directory containing MGEN logging files. From them it creates a corresponding latency file, and from that it creates a corresponding age file
@@ -194,6 +194,9 @@ def write_age_file(directory_name):
         serTimes = []
         arrival = []
 
+        RECV = []#debug
+        tot = None#debug
+
         with open(directory_name + file_name) as f:
             for line in f.read().split("\n"):
                 if "sequence" in line:
@@ -201,33 +204,61 @@ def write_age_file(directory_name):
                     serTimes.append(float(line[1].split(":")[1]))
                     arrival.append(float(line[3].split(":")[1]))
 
+                    RECV.append(float(line[2].split(":")[1])) #debug
+                elif "total" in line: #debug
+                    tot = float(line.split(":")[1])#debug
+
         interArrTimes = [0] + [arrival[i] - arrival[i-1] for i in range(1, len(arrival))]
 
-        total_run_time = 10.0
+        if DEBUG:
+            n = 10**6
+            time = [i/n for i in range(0, int(tot*n)+1)]
+            age = []
+            ind = 0
+            for t in time:
+                if t == 0:
+                    curr_age = serTimes[ind]
+                    ind += 1
+                elif t == RECV[ind]:
+                    curr_age = serTimes[ind]
+                    ind += 1
+                else:
+                    curr_age += 1/n
+                age.append(curr_age)
 
-        requestNum = len(serTimes)
 
-        totalAoI = 0
-        lastWaitTime = 0
-        totalPeakAoI = 0
+            avgAoI = sum(age)/len(age)
 
-        for i in range(1, requestNum):
-            lastWaitTime = max(lastWaitTime + serTimes[i - 1] - interArrTimes[i], 0)
-            totalAoI += interArrTimes[i] * (lastWaitTime + serTimes[i]) + (interArrTimes[i] ** 2) / 2
-            totalPeakAoI += lastWaitTime + serTimes[i] + interArrTimes[i]
 
-        avgAoI = totalAoI / total_run_time
-        avgPeakAoI = totalPeakAoI / requestNum
+        else:
+            total_run_time = 10.0
+            requestNum = len(serTimes)
+
+            totalAoI = 0
+            lastWaitTime = 0
+            totalPeakAoI = 0
+
+            for i in range(1, requestNum):
+                lastWaitTime = max(lastWaitTime + serTimes[i - 1] - interArrTimes[i], 0)
+                totalAoI += interArrTimes[i] * (lastWaitTime + serTimes[i]) + (interArrTimes[i] ** 2) / 2
+                totalPeakAoI += lastWaitTime + serTimes[i] + interArrTimes[i]
+
+            avgAoI = totalAoI / total_run_time
+            avgPeakAoI = totalPeakAoI / requestNum
+
 
         file_num = ''.join(re.findall(r'\d+', file_name))
         latency_file_name = directory_name + "age" + file_num + ".txt"
 
         #writing to the file
+        print("Writing to file:", latency_file_name)
         with open(latency_file_name, "w") as f:
             f.write("Average Age:" + str(avgAoI) + "\n")
-            f.write("Average Peak Age:" + str(avgPeakAoI) + "\n")
+            #f.write("Average Peak Age:" + str(avgPeakAoI) + "\n")
+            f.write("placehold\n")
             f.write("Average Latency:" + str(sum(serTimes)/len(serTimes)) + "\n")
             f.write("Average Interarrival:" + str(sum(interArrTimes)/len(interArrTimes)) + "\n")
+
 
 
 """
@@ -243,15 +274,18 @@ def create_files(directory_name, ins):
 
 if __name__=='__main__':
     """
-    0: lambda = .1
-    1: lambda = 1
-    i: lambda = i for i = 2, ... , 9
-    10: lambda = 9.5
-    11: lambda = 9.9
+    mew = 1000 [packets/second]
+    0: lambda = 3
+    1: lambda = 30
+    2: lambda = 50
+    3: lambda = 97
     """
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    for i in range(0, 13):
-        dir = "/home/jm/Desktop/CORE_Research/data/data"
-        create_files(dir + str(i) + "/", ins)
+    dir = "/home/jm/Desktop/CORE_Research/data/data"
+    for i in range(13):
+        dir_name = dir + str(i)
+        create_files(dir_name, ins)
+
+
 
