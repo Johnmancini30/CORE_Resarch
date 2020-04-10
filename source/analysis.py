@@ -257,10 +257,10 @@ def plot_age(directory_name, num_directories):
     plt.xlabel("Rate [packet/second]")
     plt.ylabel("Average Age [seconds]")
 
-    #plt.xlim(0, 4)
-    #plt.ylim(0, 2)
+    plt.xlim(0, 4)
+    plt.ylim(0, 3.5)
     plt.show()
 
 
 if __name__=='__main__':
-    plot_age("/home/jm/Desktop/CORE_Research/data3/data", 13)
+    plot_age("/Users/john/Desktop/CORE_Research/data4/data", 13)

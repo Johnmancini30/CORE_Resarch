@@ -2,7 +2,7 @@ from parsing_instruction import Parsing_Instruction
 import matplotlib.pyplot as plt
 import os
 import re
-DEBUG = False
+DEBUG = True
 
 """
 parser.py: parses a directory containing MGEN logging files. From them it creates a corresponding latency file, and from that it creates a corresponding age file
@@ -262,21 +262,22 @@ Creates the files needed for experimentation. Put all of your logging files in o
 :param Instruction ins: the parsing instructions 
 """
 def create_files(directory_name, ins):
-    parse_file(directory_name, ins)
+    #parse_file(directory_name, ins)
     write_age_file(directory_name)
 
 
 if __name__=='__main__':
     """
     mew = 1000 [packets/second]
-    0: lambda = 3
-    1: lambda = 30
-    2: lambda = 50
-    3: lambda = 97
+    0: .3
+    1: .5
+    2, ... , 10: 1, ... 9
+    11: 9.5
+    12: 9.7
     """
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    dir = "/home/jm/Desktop/CORE_Research/data3/data"
+    dir = "/Users/john/Desktop/CORE_Research/data4/data"
     for i in range(13):
         dir_name = dir + str(i)
         create_files(dir_name, ins)
