@@ -1,7 +1,7 @@
 # CORE_Resarch
 A repository for my independent research into the CORE platform
 
-data: contains data where 5 traffic flows are run per parameter, each being run for 10 secodns each, and average age is calculated from theoretical equation
+data: contains data where 5 traffic flows are run per parameter, each being run for 10 seconds each, and average age is calculated from theoretical equation
 
 data2: contains same data as data, but average age is approximated
 
