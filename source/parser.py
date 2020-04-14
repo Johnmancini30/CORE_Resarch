@@ -262,7 +262,7 @@ if __name__ == '__main__':
 
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    dir = "/home/jm/Desktop/CORE_Research/data7/data"
+    dir = "/home/jm/Desktop/CORE_Research/data/periodic/data"
     for i in range(13):
         dir_name = dir + str(i)
         create_files(dir_name, ins)

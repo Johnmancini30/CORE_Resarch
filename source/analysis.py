@@ -207,14 +207,14 @@ def m_m_1_average_age(mu, lam):
         pass
 
 
+
 """
-plot the age files and plots the average age, average latency, and theoretical results
+extracts average age, average latency, and average interarrival time
 
 :param string directory_name:
-:return None:
+:param int num_directories:
 """
-def plot_age(directory_name, num_directories):
-
+def get_average_data(directory_name, num_directories):
     avg_age = []
     avg_latency = []
     avg_inter = []
@@ -227,7 +227,8 @@ def plot_age(directory_name, num_directories):
         inter = []
         files = None
         try:
-            files = sorted([file for file in os.listdir(dir_name) if "age" in file], key = lambda x: int(''.join(re.findall(r'\d+', x))))
+            files = sorted([file for file in os.listdir(dir_name) if "age" in file],
+                           key=lambda x: int(''.join(re.findall(r'\d+', x))))
         except:
             print("Incorrect directory name or no age files in it")
             print(dir_name)
@@ -240,11 +241,23 @@ def plot_age(directory_name, num_directories):
                 latency.append(float(line[2].split(":")[1]))
                 inter.append(float(line[3].split(":")[1]))
 
-        avg_age.append(sum(age)/len(age))
-        avg_latency.append(sum(latency)/len(latency))
-        avg_inter.append(sum(inter)/len(inter))
+        avg_age.append(sum(age) / len(age))
+        avg_latency.append(sum(latency) / len(latency))
+        avg_inter.append(sum(inter) / len(inter))
 
-    x = [.3, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.7]
+    return avg_age, avg_latency, avg_inter
+
+
+"""
+plot the age files and plots the average age, average latency, and theoretical results
+
+:param list x:
+:param string directory_name:
+:param int num_directories:
+"""
+def plot_age(x, directory_name, num_directories):
+    avg_age, avg_latency, avg_inter = get_average_data(directory_name, num_directories)
+
     plt.plot(x, avg_latency, color="black", label="Latency")
     plt.plot(x, avg_inter, color="blue", label="Interrarival")
     plt.plot(x, avg_age, color="red", label="Age")
@@ -262,5 +275,37 @@ def plot_age(directory_name, num_directories):
     plt.show()
 
 
+"""
+plots average age from poisson distribution vs. periodic distribution arrival
+
+:param list x:
+:param string poisson_dir:
+:param string periodic_dir:
+:param int num_poisson_dir:
+:param int num_periodic_dir:
+"""
+def plot_avg_age_distributions(x, poisson_dir, periodic_dir, num_poisson_dir, num_periodic_dir):
+    avg_age_poisson, z, y = get_average_data(poisson_dir, num_poisson_dir)
+    avg_age_periodic, z, y = get_average_data(periodic_dir, num_periodic_dir)
+
+    plt.plot(x, avg_age_poisson, color="blue", label="Age Age D/M/1")
+    plt.scatter(x, avg_age_poisson, color="blue")
+
+    plt.plot(x, avg_age_periodic, color="red", label="Avg Age M/M/1")
+    plt.scatter(x, avg_age_periodic, color="red")
+
+    plt.legend()
+    plt.xlabel("Rate [packet/second]")
+    plt.ylabel("Average Age [seconds]")
+
+    plt.show()
+
+
+
+
+
 if __name__=='__main__':
-    plot_age("/home/jm/Desktop/CORE_Research/data7/data", 13)
+    x = [.3, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.7]
+    #plot_avg_age_distributions(x, "/home/jm/Desktop/CORE_Research/data/poisson/data", "/home/jm/Desktop/CORE_Research/data/periodic/data", 13, 13)
+    #"/home/jm/Desktop/CORE_Research/data/poisson/data"
+    plot_age(x, "/home/jm/Desktop/CORE_Research/data/poisson/data", 13)
