@@ -1,0 +1,18 @@
+sequence:0|latency:0.291039|reception:0.291039|generation:0.0
+sequence:1|latency:0.346154|reception:0.441742|generation:0.095588
+sequence:2|latency:0.414764|reception:0.572042|generation:0.157278
+sequence:3|latency:0.227327|reception:0.674244|generation:0.446917
+sequence:4|latency:0.273308|reception:0.775201|generation:0.501893
+sequence:5|latency:0.261757|reception:0.86695|generation:0.605193
+sequence:6|latency:0.356567|reception:0.966948|generation:0.610381
+sequence:7|latency:0.417349|reception:1.096651|generation:0.679302
+sequence:8|latency:0.486668|reception:1.186136|generation:0.699468
+sequence:9|latency:0.627212|reception:1.33412|generation:0.706908
+sequence:10|latency:0.639176|reception:1.430147|generation:0.790971
+sequence:11|latency:0.739531|reception:1.566086|generation:0.826555
+sequence:12|latency:0.852893|reception:1.702961|generation:0.850068
+sequence:13|latency:0.900336|reception:1.793485|generation:0.893149
+sequence:14|latency:0.900808|reception:1.924233|generation:1.023425
+sequence:15|latency:1.019538|reception:2.062497|generation:1.042959
+sequence:16|latency:1.101846|reception:2.146722|generation:1.044876
+total run time:1.855683
