@@ -6,18 +6,25 @@ menu_pixel = (801, 300)
 start_pixel = (1042, 613)
 stop_pixel = (1142, 611)
 gear_pixel = (793, 499)
-log_pixel = (513, 265)
-apply_pixel = (382, 400)
-pattern_pixel = (333, 298)
-time_pixel = (616, 121)
+close_traffic = (1215, 244)
+
+
+log_pixel = (552, 259)
+apply_pixel = (366, 406)
+pattern_pixel = (367, 294)
+time_pixel = (622, 119)
+
+
+
 start_net = (85, 143)
 stop_net = (84, 143)
-close_traffic = (1215, 244)
 traffic_menu = (269, 73)
 traffic = (286, 205)
-pattern = "POISSON ["
-packets_sent = 100
-num_runs = 2
+
+
+pattern = "PERIODIC ["
+packets_sent = 20
+num_runs = 5
 
 """
 bot.py: A bot to help me automate the process of running experiements in CORE. All pixel based, so would not work from computer to computer
@@ -122,7 +129,7 @@ def run_all(ins, file_name):
 
 
 if __name__ == '__main__':
-    f = "/home/jm/Desktop/CORE_Research/data7/data"
+    f = "/home/jm/Desktop/CORE_Research/data/periodic/data"
 ins = {0:.3, 1: .5, 2: 1.0, 3: 2.0, 4: 3.0, 5: 4.0, 6: 5.0, 7: 6.0, 8: 7.0, 9: 8.0, 10: 9.0, 11: 9.5, 12: 9.7}
 run_all(ins, f)
 

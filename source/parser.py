@@ -259,14 +259,7 @@ def create_files(directory_name, ins):
 
 
 if __name__ == '__main__':
-    """
-    mew = 1000 [packets/second]
-    0: .3
-    1: .5
-    2, ... , 10: 1, ... 9
-    11: 9.5
-    12: 9.7
-    """
+
 
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
     dir = "/home/jm/Desktop/CORE_Research/data7/data"
