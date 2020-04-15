@@ -9,10 +9,10 @@ gear_pixel = (793, 499)
 close_traffic = (1215, 244)
 
 
-log_pixel = (552, 259)
-apply_pixel = (366, 406)
-pattern_pixel = (367, 294)
-time_pixel = (622, 119)
+log_pixel = (645, 261)
+apply_pixel = (374, 406)
+pattern_pixel = (318, 297)
+time_pixel = (625, 117)
 
 
 
@@ -23,7 +23,7 @@ traffic = (286, 205)
 
 
 pattern = "PERIODIC ["
-packets_sent = 20
+packets_sent = 100
 num_runs = 5
 
 """
@@ -55,7 +55,7 @@ this runs the bot.
 
 def bot(file_name, run_time):
     for i in range(num_runs):
-        start_virtual_net()
+        #start_virtual_net()
 
         open_traffic_menu()
         click(menu_pixel)
@@ -72,7 +72,7 @@ def bot(file_name, run_time):
         click(stop_pixel, 2)
         click(close_traffic, .5)
 
-        click(stop_net, 10)
+        #click(stop_net, 10)
 
 
 """
@@ -130,7 +130,7 @@ def run_all(ins, file_name):
 
 if __name__ == '__main__':
     f = "/home/jm/Desktop/CORE_Research/data/periodic/data"
-ins = {0:.3, 1: .5, 2: 1.0, 3: 2.0, 4: 3.0, 5: 4.0, 6: 5.0, 7: 6.0, 8: 7.0, 9: 8.0, 10: 9.0, 11: 9.5, 12: 9.7}
-run_all(ins, f)
+    ins = {0:.3, 1: .5, 2: 1.0, 3: 2.0, 4: 3.0, 5: 4.0, 6: 5.0, 7: 6.0, 8: 7.0, 9: 8.0, 10: 9.0, 11: 9.5, 12: 9.7}
+    run_all(ins, f)
 
 

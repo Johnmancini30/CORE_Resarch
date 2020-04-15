@@ -258,12 +258,12 @@ plot the age files and plots the average age, average latency, and theoretical r
 def plot_age(x, directory_name, num_directories):
     avg_age, avg_latency, avg_inter = get_average_data(directory_name, num_directories)
 
-    plt.plot(x, avg_latency, color="black", label="Latency")
-    plt.plot(x, avg_inter, color="blue", label="Interrarival")
+    #plt.plot(x, avg_latency, color="black", label="Latency")
+    #plt.plot(x, avg_inter, color="blue", label="Interrarival")
     plt.plot(x, avg_age, color="red", label="Age")
 
-    plt.scatter(x, avg_latency, color="black")
-    plt.scatter(x, avg_inter, color="blue")
+    #plt.scatter(x, avg_latency, color="black")
+    #plt.scatter(x, avg_inter, color="blue")
     plt.scatter(x, avg_age, color="red")
 
     plt.legend()
@@ -271,7 +271,7 @@ def plot_age(x, directory_name, num_directories):
     plt.ylabel("Average Age [seconds]")
 
     #plt.xlim(0, 4)
-    #plt.ylim(0, 3.5)
+
     plt.show()
 
 
@@ -288,16 +288,16 @@ def plot_avg_age_distributions(x, poisson_dir, periodic_dir, num_poisson_dir, nu
     avg_age_poisson, z, y = get_average_data(poisson_dir, num_poisson_dir)
     avg_age_periodic, z, y = get_average_data(periodic_dir, num_periodic_dir)
 
-    plt.plot(x, avg_age_poisson, color="blue", label="Age Age D/M/1")
-    plt.scatter(x, avg_age_poisson, color="blue")
+    plt.plot(x, avg_age_poisson, color="blue", label="Age Age Poisson")
+    plt.plot(x, avg_age_periodic, color="red", label="Avg Age Periodic")
 
-    plt.plot(x, avg_age_periodic, color="red", label="Avg Age M/M/1")
+    plt.scatter(x, avg_age_poisson, color="blue")
     plt.scatter(x, avg_age_periodic, color="red")
 
     plt.legend()
     plt.xlabel("Rate [packet/second]")
     plt.ylabel("Average Age [seconds]")
-
+    #plt.ylim(0, 1.3)
     plt.show()
 
 
@@ -306,6 +306,5 @@ def plot_avg_age_distributions(x, poisson_dir, periodic_dir, num_poisson_dir, nu
 
 if __name__=='__main__':
     x = [.3, .5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9.5, 9.7]
-    #plot_avg_age_distributions(x, "/home/jm/Desktop/CORE_Research/data/poisson/data", "/home/jm/Desktop/CORE_Research/data/periodic/data", 13, 13)
-    #"/home/jm/Desktop/CORE_Research/data/poisson/data"
-    plot_age(x, "/home/jm/Desktop/CORE_Research/data/poisson/data", 13)
+    plot_avg_age_distributions(x, "/home/jm/Desktop/CORE_Research/data/poisson/data", "/home/jm/Desktop/CORE_Research/data/periodic/data", 13, 13)
+    

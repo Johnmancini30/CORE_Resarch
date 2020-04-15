@@ -1,4 +1,0 @@
-Average Age:21.590836306003503
-placehold
-Average Latency:0.7829998823529413
-Average Interarrival:0.10235421176470588
