@@ -223,15 +223,17 @@ def write_age_file(directory_name):
         Q1 = (reception[1] - arrival[0]) ** 2 / 2 - (reception[1] - arrival[1]) ** 2 / 2 - arrival[0] ** 2 / 2
 
         total_AoI = Q1
+        total_peak_AoI = reception[1]- arrival[0]
         for i in range(2, n):
             Qi = (reception[i] - arrival[i - 1]) ** 2 / 2 - (reception[i] - arrival[i]) ** 2 / 2
             total_AoI += Qi
+            total_peak_AoI += reception[i] - arrival[i-1]
 
         Tn = (reception[-1] - arrival[-1]) ** 2 / 2
         total_AoI += Tn
 
         avg_AoI = total_AoI / total_time
-
+        avg_peak_AoI = total_peak_AoI/n
         file_num = ''.join(re.findall(r'\d+', file_name))
         latency_file_name = directory_name + "age" + file_num + ".txt"
 
@@ -239,8 +241,7 @@ def write_age_file(directory_name):
         print("Writing to file:", latency_file_name)
         with open(latency_file_name, "w") as f:
             f.write("Average Age:" + str(avg_AoI) + "\n")
-            # f.write("Average Peak Age:" + str(avgPeakAoI) + "\n")
-            f.write("placehold\n")
+            f.write("Average Peak Age:" + str(avg_peak_AoI) + "\n")
             f.write("Average Latency:" + str(sum(serTimes) / len(serTimes)) + "\n")
             f.write("Average Interarrival:" + str(sum(interArrTimes) / len(interArrTimes)) + "\n")
 
