@@ -1,14 +1,4 @@
 # CORE_Resarch
 A repository for my independent research into the CORE platform
 
-data1: contains data where 5 traffic flows are run per parameter, each being run for 10 seconds each, and average age is calculated from theoretical equation
-
-data2: contains same data as data1, but average age is approximated
-
-data3: contains data where 5 traffic flows are run per parameter and 100 packets are sent per flow on average, average age is calculated with theoretical equation
-
-data4: contains same data as data 3 but average age is approximated
-
-data5: contains data where 5 traffic flows are run per parameter and 20 packets are sent per flow on average, between each run the virtual network is stoppd and restarted, at which point 30 seconds are waiting until running the traffic flow.
-
-data6: contains data where 2 traffic flows are run per parameter and 100 packets are sent per flow on average, between each run the virtual network is stoppd and restarted, at which point 30 seconds are waiting until running the traffic flow.
+Refer to the videos/word doc file in the documentation folder to learn how to use this program. 
