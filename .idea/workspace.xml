@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="" />
+    <list default="true" id="89d2523f-048c-489c-b96e-1f9a12ffc9e9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paper Documenation.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Paper Documenation.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/periodic/data0/traffic0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/images/avg_age.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/images/paper_average_age.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/images/plot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/images/plot9.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/source/parser.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,28 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/parser.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="265" column="55" selection-start-line="265" selection-start-column="55" selection-end-line="265" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/poisson/data0/age1.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="392" column="5" selection-start-line="392" selection-start-column="5" selection-end-line="392" selection-end-column="5" />
+            <state relative-caret-position="-56">
+              <caret line="148" column="36" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="36" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -55,6 +49,8 @@
     <findStrings>
       <find>SENT</find>
       <find>parse_time</find>
+      <find>DEBUG</find>
+      <find>write_to_file</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,24 +90,12 @@
             <path>
               <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
               <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="poisson" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CORE_Research" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CORE_Research" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,14 +321,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24972677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21166307" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21166307" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -482,42 +466,40 @@
         <state relative-caret-position="-225" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="132" column="4" selection-start-line="132" selection-start-column="4" selection-end-line="133" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/poisson/data1/age0.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/poisson/data0/age0.txt">
+    <entry file="file://$PROJECT_DIR$/data/poisson/data0/age0.txt" />
+    <entry file="file://$PROJECT_DIR$/data/poisson/data9/age0.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/poisson/data9/age0.txt">
+    <entry file="file://$PROJECT_DIR$/data/poisson/data0/age1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/source/parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
-          <caret line="265" column="55" selection-start-line="265" selection-start-column="55" selection-end-line="265" selection-end-column="55" />
+          <caret line="236" column="28" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/poisson/data0/age1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/source/bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="392" column="5" selection-start-line="392" selection-start-column="5" selection-end-line="392" selection-end-column="5" />
+        <state relative-caret-position="-56">
+          <caret line="148" column="36" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="36" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

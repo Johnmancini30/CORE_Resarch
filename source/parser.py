@@ -1,41 +1,12 @@
 from parsing_instruction import Parsing_Instruction
-import matplotlib.pyplot as plt
 import os
 import re
 
-DEBUG = True
 
 """
 parser.py: parses a directory containing MGEN logging files. From them it creates a corresponding latency file, and from that it creates a corresponding age file
 
-NOTE: 
-1. When creating the log file names in your directory, label them sequential in the way you want the latency and age files to be created by putting a number in there somewhere. So if you
-wanted files traffic1.log, traffic2.log, and traffic5.log parsed, they would correspond to age1.log, age2.log, age5.log respectively. 
-
-2. include the string "traffic" in your MGEN logging file names
 """
-
-"""
-Creates a file with the timestamps to be used later. The file format is for each parameter, it prints that parameter name and then
-all of the data corresponding to it below, then goes on to the next parameter. It prints to seperate files based on flow
-
-This is not used to replicate the experiements of the paper, but it could be used so I kept it in the code
-
-:param array[dict] data: an array of dictionaries, each one holding the timestamp data
-:param string write_name: name of file to write to
-:return: None
-"""
-
-
-def write_to_file(data, write_name):
-    for flow in range(1, num_flows + 1):
-        with open(write_name + str(flow) + ".txt", "w") as f:
-            for key in data[0].keys():
-                if key != "flow":
-                    f.write(key + "\n")
-                    for i in range(len(data)):
-                        if data[i]["flow"] == str(flow):
-                            f.write(data[i][key] + "\n")
 
 
 """
@@ -260,12 +231,10 @@ def create_files(directory_name, ins):
 
 
 if __name__ == '__main__':
-
-
     ins = Parsing_Instruction(recv=True, sent=True, seq=True)
-    dir = "/home/jm/Desktop/CORE_Research/data/periodic/data"
+    directory = "/home/jm/Desktop/CORE_Research/data/poisson/data"
     for i in range(13):
-        dir_name = dir + str(i)
+        dir_name = directory + str(i)
         create_files(dir_name, ins)
 
 
